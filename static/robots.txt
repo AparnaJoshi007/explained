@@ -2,4 +2,4 @@ User-agent: *
 Disallow: */tags/
 Disallow: */categories/
 
-sitemap: https://gatsby-markdown-blog-starter.netlify.com/sitemap.xml
+sitemap: https://explained.netlify.com/sitemap.xml

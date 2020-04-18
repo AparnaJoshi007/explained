@@ -7,6 +7,7 @@ import styles from './Header.module.scss'
 const Header = () => (
   <header>
     <h1>
+      <img src={config.siteLogoDisplay} alt="explained" />
       <Link to="/" activeClassName={styles.activeNav}>
         {config.siteTitle}
       </Link>

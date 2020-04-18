@@ -13,7 +13,7 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/logo-48.png`,
+      )}/logos/logo.png`,
       copyright: config.copyright
     }
   },
@@ -87,19 +87,8 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: "minimal-ui",
-        icons: [
-          {
-            src: '/logos/logo-48.png',
-            sizes: '48x48',
-            type: 'image/png',
-          },
-          {
-            src: '/logos/logo-1024.png',
-            sizes: '1024x1024',
-            type: 'image/png',
-          },
-        ],
+        display: "explained",
+        icon: config.favicon
       }
     },
     "gatsby-plugin-offline",
