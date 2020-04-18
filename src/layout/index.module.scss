@@ -30,3 +30,36 @@ article {
     border-radius: 5px;
   }
 }
+
+
+.cat-nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  justify-content: center;
+
+  li {
+    height: 26px;
+    font-size: 12px;
+    border: 1px solid #eee;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin-bottom: 8px;
+
+    &+li {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+
+@media (max-width: 520px) {
+  .cat-nav {
+    strong {
+      display: none;
+    }
+  }
+}

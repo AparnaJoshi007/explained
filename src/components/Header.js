@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import config from '../../data/SiteConfig'
-import Categories from './Categories'
 import styles from './Header.module.scss'
 
 const Header = () => (
@@ -19,7 +18,11 @@ const Header = () => (
             About
           </Link>
         </li>
-        <Categories activeClassName={styles.activeNav} />
+        <li>
+          <Link to="/blog" activeClassName={styles.activeNav}>
+            Blog
+          </Link>
+        </li>
         <li>
           <Link to="/contact" activeClassName={styles.activeNav}>
             Contact

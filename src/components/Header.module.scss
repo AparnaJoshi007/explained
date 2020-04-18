@@ -80,10 +80,13 @@ header {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 520px) {
   header {
-    display: block;
-    height: 120px;
+    h1 {
+      a {
+        display: none;
+      }
+    }
   }
 
   nav {
@@ -92,30 +95,5 @@ header {
     ul {
       margin: 0;
     }
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    strong {
-      display: none;
-    }
-  }
-
-  .main-nav {
-    li {
-      &+li {
-        margin-left: 1rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 520px) {
-  header nav a {
-    font-size: 0.7rem;
-    border: 1px solid #eee;
-    padding: 2px;
-    border-radius: 5px;
   }
 }
