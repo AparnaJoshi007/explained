@@ -7,7 +7,7 @@ const RecommendationsPage = () => (
   <BlankLayout>
     <main>
       <Helmet title={`Recommendations | ${config.siteTitle}`} />
-      <h1>Recommendations</h1>
+      <h1>This weeks Recommendations 👻</h1>
       <p>Recommendation information</p>
     </main>
   </BlankLayout>

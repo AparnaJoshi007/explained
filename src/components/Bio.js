@@ -10,7 +10,7 @@ const Bio = ({ config, expanded }) => (
       alt={config.userName}
     />
     <p>
-      Written by <strong>{config.userName}</strong> who lives and works in Bangalore.
+      Written by <a href="https://www.linkedin.com/in/aparna-joshi-9698a988/" target="_blank" rel="noopener noreferrer"><strong>{config.userName}</strong></a> who lives and works in Bangalore.
       {` `}
       <Follow
         username={config.userTwitter}
