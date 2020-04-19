@@ -5,3 +5,10 @@
         width: 400px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .about-page {
+        display: block;
+    }
+}

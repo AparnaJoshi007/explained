@@ -3,23 +3,17 @@
     <img src="static/logos/logo.png" alt="Logo" width='200px' height='200px'/>
 </div>
 
-# Gatsby Markdown Blog Starter
+# Explained
 
-A markdown blog starter with all you need features to start markdown blog.
-NOTE: this porject is a developed version of [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
+Built with Gatsby starter, explained is a personal/hobby blog I have created to talk and write about my interests.
 
-It aims to provide a minimal base for building advanced GatsbyJS powered Markdown blogs.
-
-It has a basic desgin using typography-theme-stow-lake theme.
-
-
-## How can I use this?
+## How can I use Gatsby to create my own blog?
 
 If you are a newcomer to Gatsby who's interested in the implementations of most needed features, this is a great place to start.
 
 If you are interested in a foundation for building ultra-fast websites, you can use this project as a "minimal" starter.
 
-[Demo website.](https://gatsby-markdown-blog-starter.netlify.com)
+[My website.](https://explained.netlify.com/)
 
 ## Features
 
@@ -78,26 +72,3 @@ If you are interested in a foundation for building ultra-fast websites, you can 
   - write-good for linting English prose
   - gh-pages for deploying to GitHub pages
   - CodeClimate configuration file and badge
-
-## Getting Started
-
-Install this starter (assuming [Gatsby](https://github.com/gatsbyjs/gatsby/) is installed and updated) by running from your CLI:
-
-```sh
-gatsby new YourProjectName https://github.com/ammarjabakji/gatsby-markdown-blog-starter/
-npm run develop # or gatsby develop
-```
-
-Or you can fork the project, make your changes there and merge new features when needed.
-
-Alternatively:
-
-```sh
-git clone https://github.com/ammarjabakji/gatsby-markdown-blog-starter/ YourProjectName # Clone the project
-cd YourProjectname
-rm -rf .git # So you can have your own changes stored in VCS.
-npm install # or yarn install
-npm run develop # or gatsby develop
-```
-
-WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!

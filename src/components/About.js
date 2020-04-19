@@ -11,12 +11,12 @@ const About = () => (
         <h2>What do I generally do?</h2>
         <li>Hi there, My name is Aparna. 
           I am a software engineer 👩‍💻 based out of Bangalore. 
-          I completed my Bachelors 👩‍🎓 in Information Science from RVCE.
+          I completed my Bachelor`s 👩‍🎓 in Information Science from RVCE.
         </li>
         <li>I enjoy working with front-end technologies. Though I am supposed to be a coding alien 👽, 
-          I have an immense passion towards physics 🔭 and mathematics 📈.  
+          I share an immense passion for physics 🔭 and mathematics 📈.  
         </li>
-        <li>✍️ On this website, I write articles about concepts related to science 🧬, love 💘, psychology 🧠 and anything that I find interesting 🃏.
+        <li>✍️ On this website, I write articles about concepts related to science 🧬, love 💘, psychology 🧠, and anything that I find interesting 🃏.
         </li>
       </ol>
     </div>
@@ -24,16 +24,16 @@ const About = () => (
       <h2>Some more random stuff about me 😉</h2>
       <ol>
         <li>
-          I am a huge anime 📺 fan . I get mind-numbgingly addicted to a new series and 
-          live my life in virtual world until I finish watching it. 
+          I am a huge anime 📺 fan. I get mind-numbingly addicted to a new series and 
+          live my life in the virtual world until I finish watching it. 
         </li>
         <li>
-          Some people sing 🎤, some people dance 💃, I on the other hand , sketch ✍🏼 like I am in France.
+          Some people sing 🎤, some people dance 💃, I, on the other hand, sketch ✍🏼 like I am in France.
           Follow me on <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sketch_with_katana/">Instagram 📷</a>.
           I also go by the name `Miss.Katana` online. 
         </li>
         <li>
-          I am a big fan of sports 🏸 and fitness 🏃‍♀️. Though I try not to count every calorie I eat,
+          I am a great advocate of sports 🏸 and fitness 🏃‍♀️. Though I try not to count every calorie I eat,
           I try to maintain a healthy diet 😋 and regular workouts.
         </li>
         <li>
@@ -53,6 +53,11 @@ const About = () => (
           <a href="mailto:aparnajoshi.88@gmail.com"><strong>Email: 📧</strong></a>
           If you have any longer questions or suggestions for my upcoming articles, please email me.
           I will get back to you over the weekend.
+        </li>
+        <li>
+          <a href="https://github.com/AparnaJoshi007/"><strong>Github: 🤖</strong></a>
+          I am not very active on Github except for office related work. However, if you have any interesting projects and want to collaborate with me 
+          to develop front-end, I will be more then happy to help.
         </li>
         <li>
            If you are my friend or an formal acquanintance, please meet me in person, I wouldn`t mind having a cup of coffee with you
