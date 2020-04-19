@@ -1,21 +1,66 @@
 import React from 'react'
-
-const pageText = {
-  paraOne: `Hello !! My name is Rolwin Reevan Monteiro. I'm a full stack web developer who is
-    passionate about various web technologies. I like to experiment with different web
-    technologies. I have an experience of nearly 3 years working with LAMP stack, MERN stack
-    and ELK stack. Building fancy UI's just like this one that your seeing 😅 and writing blogs about tech stacks
-    is what Rolwin loves to do. Check my blog which I update every week for some Javascript and some 
-    cool notes on web technologies.`,
-  paraTwo: `Currently I work mostly with Javascript technologies like ReactJS and NodeJS. I also
-    have hands on experience working with cloud infrastructures <b>AWS/GCP</b> and have deployed applications
-    keeping scalability in mind. Docker, Kubernetes, Jenkins, SonarQube are some of the cool
-    tools I use for <b>CI/ CD</b>. I'm always a learner and a self taught programmer.`,
-};
+import config from '../../data/SiteConfig'
+import styles from './About.module.scss'
 
 const About = () => (
   <>
     <h1>Greetings Folks!!! 👻</h1>
+    <div className={styles.aboutPage}>
+      <img src={config.imgb.replace("static", "")} alt="aparna" />
+      <ol>
+        <h2>What do I generally do?</h2>
+        <li>Hi there, My name is Aparna. 
+          I am a software engineer 👩‍💻 based out of Bangalore. 
+          I completed my Bachelors 👩‍🎓 in Information Science from RVCE.
+        </li>
+        <li>I enjoy working with front-end technologies. Though I am supposed to be a coding alien 👽, 
+          I have an immense passion towards physics 🔭 and mathematics 📈.  
+        </li>
+        <li>✍️ On this website, I write articles about concepts related to science 🧬, love 💘, psychology 🧠 and anything that I find interesting 🃏.
+        </li>
+      </ol>
+    </div>
+    <div>
+      <h2>Some more random stuff about me 😉</h2>
+      <ol>
+        <li>
+          I am a huge anime 📺 fan . I get mind-numbgingly addicted to a new series and 
+          live my life in virtual world until I finish watching it. 
+        </li>
+        <li>
+          Some people sing 🎤, some people dance 💃, I on the other hand , sketch ✍🏼 like I am in France.
+          Follow me on <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sketch_with_katana/">Instagram 📷</a>.
+          I also go by the name `Miss.Katana` online. 
+        </li>
+        <li>
+          I am a big fan of sports 🏸 and fitness 🏃‍♀️. Though I try not to count every calorie I eat,
+          I try to maintain a healthy diet 😋 and regular workouts.
+        </li>
+        <li>
+          Last but not the least, I love coffee ☕. DM me with the details given below and I would love 
+          to chat with you over a cup of coffee.
+        </li>
+      </ol>
+    </div>
+    <div>
+      <h2>Get in touch with me 🙋‍♀️</h2>
+      <ol>
+        <li>
+          <a href="https://twitter.com/aparna_joshi_" target="_blank" rel="noopener noreferrer"><strong>Twitter: 🕊️ </strong></a>
+          If you`ve got a short question or message, please tweet <a href="https://twitter.com/aparna_joshi_" target="_blank" rel="noopener noreferrer">@aparna_joshi_</a> and I`ll get back to you as soon as I can.
+        </li>
+        <li>
+          <a href="mailto:aparnajoshi.88@gmail.com"><strong>Email: 📧</strong></a>
+          If you have any longer questions or suggestions for my upcoming articles, please email me.
+          I will get back to you over the weekend.
+        </li>
+        <li>
+           If you are my friend or an formal acquanintance, please meet me in person, I wouldn`t mind having a cup of coffee with you
+           😛
+        </li>
+      </ol>
+    </div>
+    
   </>
 )
 
