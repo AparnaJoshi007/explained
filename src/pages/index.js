@@ -1,20 +1,28 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../layout'
 import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
+import HomePageHero from '../components/HomePageHero'
 import config from '../../data/SiteConfig'
 
-const Index = ({ data }) => (
-  <Layout>
-    <main>
-      <Helmet title={config.siteTitle} />
-      <SEO />
-      <PostListing postEdges={data.allMarkdownRemark.edges} />
-    </main>
-  </Layout>
-)
+const Index = ({ data }) => {
+  const edges = data.allMarkdownRemark.edges.slice(0, 6);
+  return (
+    <Layout>
+      <main>
+        <Helmet title={config.siteTitle} />
+        <HomePageHero />
+        <SEO />
+        <PostListing postEdges={edges} />
+        <Link to="/blog">
+          more to read →
+        </Link>
+      </main>
+    </Layout>
+  )
+}
 
 export default Index
 

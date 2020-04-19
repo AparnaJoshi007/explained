@@ -6,7 +6,7 @@ import styles from './Header.module.scss'
 const Header = () => (
   <header>
     <h1>
-      <img src={config.siteLogoDisplay} alt="explained" />
+      <img src={config.siteLogoDisplay.replace("static", "")} alt="explained" />
       <Link to="/" activeClassName={styles.activeNav}>
         {config.siteTitle}
       </Link>
@@ -15,7 +15,7 @@ const Header = () => (
       <ul className={styles.mainNav}>
         <li>
           <Link to="/about" activeClassName={styles.activeNav}>
-            About
+            Know me
           </Link>
         </li>
         <li>
@@ -24,8 +24,8 @@ const Header = () => (
           </Link>
         </li>
         <li>
-          <Link to="/contact" activeClassName={styles.activeNav}>
-            Contact
+          <Link to="/recommendations" activeClassName={styles.activeNav}>
+            Recommendations
           </Link>
         </li>
       </ul>

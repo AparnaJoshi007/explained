@@ -9,7 +9,7 @@ import config from '../../data/SiteConfig'
 const Blog = ({ data }) => (
   <Layout>
     <main>
-      <Helmet title={config.siteTitle} />
+      <Helmet title={`Blogs | ${config.siteTitle}`} />
       <SEO />
       <PostListing postEdges={data.allMarkdownRemark.edges} />
     </main>

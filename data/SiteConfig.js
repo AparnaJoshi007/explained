@@ -2,8 +2,10 @@ const config = {
   siteTitle: 'Explained', // Site title.
   siteTitleShort: 'Explained', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Explained', // Alternative site title for SEO.
+  siteMotto: 'Clearer, Faster, Better', // Short site motto
   siteLogo: 'static/logos/logo.png', // Logo used for SEO and manifest.
-  siteLogoDisplay: 'https://i.ibb.co/gV9qCSv/logo.png', // logo to be displayed
+  siteLogoDisplay: 'static/logos/image_white.png', // logo to be displayed
+  siteNameLogo: 'static/logos/name.png', // logo with site name
   favicon: 'static/logos/logo.png',
   siteUrl: 'https://explained.netlify.com', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
@@ -19,12 +21,14 @@ const config = {
   userTwitter: 'aparna_joshi_', // Optionally renders "Follow Me" in the Bio segment.
   userGitHub: 'AparnaJoshi007', // Optionally renders "Follow Me" in the Bio segment.
   userLocation: 'Bangalore, India', // User location to display in the author segment.
-  userAvatar: 'https://i.ibb.co/wLbCgFV/avatar-square.png', // User avatar location
+  userAvatar: 'static/userAvatar/avatar_square.png', // User avatar location
   userDescription:
     "Software developer by profession, wanderer by choice.", // User description to display in the author segment.
   copyright: 'Copyright © 2020. All rights reserved.', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
-  backgroundColor: 'red' // Used for setting manifest background color.
+  backgroundColor: 'red', // Used for setting manifest background color.
+  imga: 'static/userAvatar/imga.jpg',
+  imgb: 'static/userAvatar/imgb.jpg'
 }
 
 // Validate

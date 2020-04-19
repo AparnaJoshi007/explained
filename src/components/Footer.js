@@ -27,6 +27,13 @@ const Footer = () => (
         >
           RSS
         </a>
+        <a
+          href="https://www.gatsbyjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Gatsby
+        </a>
       </div>
       <div className={styles.copyright}>{config.copyright}</div>
     </div>

@@ -1,0 +1,14 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    line-height: inherit;
+    
+    img {
+        width: 410px;
+        margin: auto;
+        height: 126px;
+    }
+}

@@ -6,12 +6,11 @@ const Bio = ({ config, expanded }) => (
   <>
     <img
       className={styles.avatar}
-      src={config.userAvatar}
+      src={config.userAvatar.replace("static", "")}
       alt={config.userName}
     />
     <p>
-      Written by <strong>{config.userName}</strong> who lives and works in San
-      Francisco building useful things.
+      Written by <strong>{config.userName}</strong> who lives and works in Bangalore.
       {` `}
       <Follow
         username={config.userTwitter}
