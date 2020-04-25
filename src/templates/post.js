@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
-import Layout from '../layout'
+import BlankLayout from '../layout/layout'
 import Bio from '../components/Bio'
 import PostTags from '../components/PostTags'
 import SocialLinks from '../components/SocialLinks'
@@ -19,7 +19,7 @@ export default ({ data, pageContext }) => {
     post.id = slug
   }
   return (
-    <Layout>
+    <BlankLayout>
       <main>
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
@@ -56,7 +56,7 @@ export default ({ data, pageContext }) => {
           </ul>
         </nav>
       </main>
-    </Layout>
+    </BlankLayout>
   )
 }
 

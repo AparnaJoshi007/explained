@@ -4,7 +4,6 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../layout'
 import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
-import HomePageHero from '../components/HomePageHero'
 import config from '../../data/SiteConfig'
 
 const Index = ({ data }) => {
@@ -13,7 +12,6 @@ const Index = ({ data }) => {
     <Layout>
       <main>
         <Helmet title={config.siteTitle} />
-        <HomePageHero />
         <SEO />
         <PostListing postEdges={edges} />
         <Link to="/blog">

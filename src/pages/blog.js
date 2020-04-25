@@ -1,19 +1,20 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import Layout from '../layout'
+import BlankLayout from '../layout/layout'
 import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 
 const Blog = ({ data }) => (
-  <Layout>
+  <BlankLayout>
     <main>
+      Add some heading babe
       <Helmet title={`Blogs | ${config.siteTitle}`} />
       <SEO />
       <PostListing postEdges={data.allMarkdownRemark.edges} />
     </main>
-  </Layout>
+  </BlankLayout>
 )
 
 export default Blog
