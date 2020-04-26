@@ -65,7 +65,6 @@ const About = () => (
         </li>
       </ol>
     </div>
-    
   </>
 )
 

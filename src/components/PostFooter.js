@@ -4,12 +4,12 @@ import styles from './PostFooter.module.scss'
 const PostFooter = ({ config, post, lightMode }) => (
   <>
     <footer className={styles.postCardMeta}>
-      <a className={styles.staticAvatar} href="https://www.linkedin.com/in/aparna-joshi-9698a988/">
+      <a className={styles.staticAvatar} href={`https://twitter.com/${config.userTwitter}`}>
         <img className={styles.authorProfileImage} src={config.siteLogoDisplay.replace("static", "")} alt={config.userName} />
       </a>
       <div className={styles.postCardMetaContent}>
         <span>
-          <a className={lightMode ? styles.nameLight : styles.name} href="https://www.linkedin.com/in/aparna-joshi-9698a988/">{config.userName}</a>
+          <a className={lightMode ? styles.nameLight : styles.name} href={`https://twitter.com/${config.userTwitter}`}>{config.userName}</a>
         </span>
         <span>
           <span>{post.date} &nbsp;</span>

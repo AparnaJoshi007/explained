@@ -3,8 +3,8 @@ import { Link } from 'gatsby'
 import config from '../../data/SiteConfig'
 import styles from './Header.module.scss'
 
-const Header = () => (
-  <header>
+const Header = ({ transparentHeader }) => (
+  <header className={transparentHeader ? styles.transparentHeader : ''}>
     <h1>
       <Link to="/" activeClassName={styles.activeNav}>
         <img src={config.siteNameLogo.replace("static", "")} alt="explained" />
@@ -13,18 +13,13 @@ const Header = () => (
     <nav>
       <ul className={styles.mainNav}>
         <li>
-          <Link to="/about" activeClassName={styles.activeNav}>
-            Know me
-          </Link>
-        </li>
-        <li>
           <Link to="/blog" activeClassName={styles.activeNav}>
-            Blog
+            Blogs
           </Link>
         </li>
         <li>
-          <Link to="/recommendations" activeClassName={styles.activeNav}>
-            Recommendations
+          <Link to="/about" activeClassName={styles.activeNav}>
+            Author
           </Link>
         </li>
       </ul>

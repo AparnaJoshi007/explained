@@ -4,18 +4,23 @@ import { graphql } from 'gatsby'
 import BlankLayout from '../layout/layout'
 import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
+import BlogHeader from '../components/BlogHeader'
 import config from '../../data/SiteConfig'
 
-const Blog = ({ data }) => (
-  <BlankLayout>
-    <main>
-      Add some heading babe
-      <Helmet title={`Blogs | ${config.siteTitle}`} />
-      <SEO />
-      <PostListing postEdges={data.allMarkdownRemark.edges} />
-    </main>
-  </BlankLayout>
-)
+const Blog = ({ data }) => {
+  const blogCount = data.allMarkdownRemark.edges.length;
+  return (
+    <BlankLayout>
+      <main>
+        <Helmet title={`Blogs | ${config.siteTitle}`} />
+        <SEO />
+        <BlogHeader blogCount={blogCount} />
+        <PostListing postEdges={data.allMarkdownRemark.edges} />
+      </main>
+    </BlankLayout>
+  )
+}
+  
 
 export default Blog
 

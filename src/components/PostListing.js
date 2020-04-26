@@ -44,6 +44,7 @@ const PostListing = ({ postEdges }) => {
             <PostFooter config={config} post={post} />
           </article>
         </Link>
+          
       ))}
     </div>
   )

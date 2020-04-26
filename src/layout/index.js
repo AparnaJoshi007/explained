@@ -11,7 +11,7 @@ import styles from './index.module.scss'
 const MainLayout = ({ postEdges, children }) => (
   <>
     <div className={styles.headerWrapper}>
-      <Header />
+      <Header transparentHeader />
       <HomePageHero />
       <FeaturedPost postEdges={postEdges} />
       <ul className={styles.catNav}>

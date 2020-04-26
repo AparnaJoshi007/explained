@@ -6,7 +6,7 @@ const config = {
   siteLogo: 'static/logos/logo.png', // Logo used for SEO and manifest.
   siteLogoDisplay: 'static/logos/image_white.png', // logo to be displayed
   siteNameLogo: 'static/logos/name.png', // logo with site name
-  favicon: 'static/logos/logo.png',
+  favicon: 'static/logos/image_white.png',
   siteUrl: 'https://explained.netlify.com', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription:
@@ -20,6 +20,7 @@ const config = {
   userEmail: 'aparnajoshi.88@gmail.com', // Email used for RSS feed's author segment
   userTwitter: 'aparna_joshi_', // Optionally renders "Follow Me" in the Bio segment.
   userGitHub: 'AparnaJoshi007', // Optionally renders "Follow Me" in the Bio segment.
+  userLinkedIn: 'aparna-joshi-9698a988',
   userLocation: 'Bangalore, India', // User location to display in the author segment.
   userAvatar: 'static/userAvatar/avatar_square.png', // User avatar location
   userDescription:

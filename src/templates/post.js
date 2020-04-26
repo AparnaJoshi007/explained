@@ -25,7 +25,7 @@ export default ({ data, pageContext }) => {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <div>
+        <div className={styles.postWrapper}>
           <h1>{post.title}</h1>
           <p className={styles.postMeta}>
             {date} &mdash; {postNode.timeToRead} Min Read{' '}
@@ -40,21 +40,21 @@ export default ({ data, pageContext }) => {
           <div className={styles.postMeta}>
             <SocialLinks postPath={slug} postNode={postNode} />
           </div>
+          <nav>
+            <ul className={styles.pagination}>
+              <li>
+                <Link to={prevslug} rel="prev">
+                  ← {prevtitle}
+                </Link>
+              </li>
+              <li>
+                <Link to={nextslug} rel="next">
+                  {nexttitle}→
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul className={styles.pagination}>
-            <li>
-              <Link to={prevslug} rel="prev">
-                ← {prevtitle}
-              </Link>
-            </li>
-            <li>
-              <Link to={nextslug} rel="next">
-                {nexttitle}→
-              </Link>
-            </li>
-          </ul>
-        </nav>
       </main>
     </BlankLayout>
   )

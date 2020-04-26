@@ -23,10 +23,12 @@
     .social-links {
         position: relative;
         top: 0;
+        left: 0;
     }
 
     .social-links div {
         display: inline-grid;
         position: relative;
+        margin: 4px;
     }
 }
