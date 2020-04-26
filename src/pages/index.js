@@ -8,12 +8,23 @@ import config from '../../data/SiteConfig'
 
 const Index = ({ data }) => {
   const edges = data.allMarkdownRemark.edges.slice(0, 6);
+  const postEdges = [];
+  const featuredPostEdges = [];
+  edges.forEach(edge => {
+    const featured = edge.node.frontmatter.featured;
+    if(featured === false) {
+      postEdges.push(edge);
+    } else {
+      featuredPostEdges.push(edge);
+    }
+  });
+  
   return (
-    <Layout>
+    <Layout postEdges={featuredPostEdges}>
       <main>
         <Helmet title={config.siteTitle} />
         <SEO />
-        <PostListing postEdges={edges} />
+        <PostListing postEdges={postEdges} />
         <Link to="/blog">
           more to read →
         </Link>
@@ -41,6 +52,7 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
+            featured
             tags
             cover
             date

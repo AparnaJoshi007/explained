@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: #fafbfb;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -19,6 +20,11 @@ main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  a {
+    color: #3eb0ef;
+    display: inline;
+  }
 }
 
 .cat-nav {
@@ -30,16 +36,22 @@ main {
   justify-content: center;
 
   li {
-    height: 26px;
     font-size: 12px;
     border: 1px solid #eee;
-    padding: 2px;
+    padding: 4px;
     border-radius: 5px;
-    background-color: #f1f1f1;
     margin-bottom: 8px;
 
     &+li {
       margin-left: 1.5rem;
+    }
+
+    a {
+      color: #3eb0ef;
+      
+      &:hover {
+        color: #ddd;
+      }
     }
   }
 }

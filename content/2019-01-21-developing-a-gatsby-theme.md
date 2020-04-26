@@ -1,5 +1,6 @@
 ---
 date: 2019-10-17
+featured: false
 title: 'Developing a Gatsby Theme'
 thumbnail: '../thumbnails/wp.png'
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"

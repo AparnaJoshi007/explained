@@ -5,13 +5,15 @@ import Header from '../components/Header'
 import config from '../../data/SiteConfig'
 import Categories from '../components/Categories'
 import HomePageHero from '../components/HomePageHero'
+import FeaturedPost from '../components/FeaturedPost'
 import styles from './index.module.scss'
 
-const MainLayout = ({ children }) => (
+const MainLayout = ({ postEdges, children }) => (
   <>
     <div className={styles.headerWrapper}>
       <Header />
       <HomePageHero />
+      <FeaturedPost postEdges={postEdges} />
       <ul className={styles.catNav}>
         <Categories activeClassName={styles.activeNav} />
       </ul>

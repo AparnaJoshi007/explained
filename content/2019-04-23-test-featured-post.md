@@ -1,8 +1,8 @@
 ---
-date: 2017-01-01
-featured: false
-title: "Bold Mage"
-cover: "https://unsplash.it/400/300/?random?BoldMage"
+date: 2019-04-23
+featured: true
+title: "Test featured post"
+cover: "https://unsplash.it/400/300/?random?test"
 categories: 
     - Tech
     - React
@@ -10,6 +10,7 @@ tags:
     - programming
     - stuff
     - other
+    - featured
 ---
 
 ## Sedisti civiliter

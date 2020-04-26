@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import PostFooter from './PostFooter'
+import config from '../../data/SiteConfig'
 import styles from './PostsListing.module.scss'
 
 const PostListing = ({ postEdges }) => {
@@ -25,16 +27,21 @@ const PostListing = ({ postEdges }) => {
     <div className={styles.articleList}>
       {/* Your post list here. */
       postList.map(post => (
-        <Link to={post.path} key={post.title}>
+        <Link to={post.path} key={post.title} className={styles.postCardLink}>
+          <div className={styles.imageWrapper}>
+            <div aria-hidden="true" className={styles.imageDiv} />
+            <img src={post.cover} alt="img-cover" />
+          </div>
+          
           <article className={styles.articleBox}>
             <div className={styles.right}>
-              <h3>{post.title}</h3>
               <div className={styles.meta}>
-                {post.date} &mdash; <span>{post.categories.join(' / ')}</span>{' '}
-                &mdash; {post.timeToRead} Min Read{' '}
+                <span>{post.categories.join(' / ')}</span>
               </div>
+              <h3 className={styles.postCardTitle}>{post.title}</h3>
               <p>{post.excerpt}</p>
             </div>
+            <PostFooter config={config} post={post} />
           </article>
         </Link>
       ))}
