@@ -14,14 +14,14 @@ tags:
 ---
 
 ## COVID-19: Facts and figures.
-COVID-19 🦠is an infectious upper respiratory disease caused by [SARS-CoV-2](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2) virus. Most commonly known as Coronavirus, this disease was first identified in December 2019 in Wuhan, the capital of China's Hubei province. Within mere months of its first discovery, COVID-19 has spread all over the world, causing it to become a global pandemic, claiming 200000 lives. This article paints a brief picture of how this disease came to be, and what the current situation is.
+COVID-19 🦠is an infectious upper respiratory disease caused by [SARS-CoV-2](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2) virus. Most commonly known as Coronavirus, this disease was first identified in December 2019 in Wuhan, the capital of China's Hubei province. Within mere months of its first discovery, COVID-19 has spread all over the world, causing it to become a global pandemic, claiming more than 200000 lives. This article paints a brief picture of how this disease came to be, and what the current situation is.
 
 ![coronavirus](/images/coronavirus-pandemic/coronabanner.png)
 [source](https://pixabay.com/photos/covid-19-coronavirus-virus-corona-4961257/)
 ## A species barrier was crossed🚧:
 **December 2019**, For the microbes, it was the day to celebrate, as yet another virus from the family of "Coronaviruses" had crossed a new species barrier. Unlike many organisms, the main goal of the viruses is to find a host body, infect, and use their cell's structure to reproduce. The same would be the function of this newfound SARS-CoV-2 virus. Some speculate that it mutated through bats, others say it had infected some other form of life stock in Wuhan market, however, the fact remains that these viruses had mutated, and could now infect humans.
 
-The Coronaviruses started spreading amongst the residents of Wuhan district like a forest fire. This was when international travel was still at its peak. Before the China government could confirm its existence and declare this new disease to be an Epidemic in the Hubei province, the viruses had found its hosts from across the world. 
+The COVID-19 started spreading amongst the residents of Wuhan district like a forest fire. This was when international travel was still at its peak. Before the China government could confirm its existence and declare this new disease to be an Epidemic in the Hubei province, the viruses had found its hosts from across the world. 
 
 **The Coronaviruses had already won the first stage of the battle for 2 reasons:**
 - Since this is a new virus, humans knew relatively lesser information about the virus. Every virus contains some kind of genetic information either in the form of [DNA](https://en.wikipedia.org/wiki/DNA) or [RNA](https://en.wikipedia.org/wiki/RNA), covered in a protein coating. The rate at which the virus can spread, and the amount of time viruses can live outside the host cell differs from one virus to another. None of this information was clear at the beginning.
@@ -69,15 +69,15 @@ The final ongoing crisis includes major declines in the sales and profits of man
 
 Governments across the globe are putting in their best efforts to help the people who are the indirect victims of this pandemic. However, this will be more successful if every individual joined hands with the government and the healthcare system in the prevention of the disease.
 
-## Social distancing is the new cool ⛄: Our hope to fight this pandemic still remains
+## Social distancing is the new cool ⛄: Our hope to fight this pandemic remains
 
 The pandemic is bad for everyone, whether we are directly infected with the disease, or we are sitting safely at home, it is still affecting us. However, there is still some hope to fight this situation.
 
 1. Countries across the world are coming together in research and development of new vaccine/cure to this disease. This may lead to a stronger and long-lasting collaboration among the healthcare systems of the world.
-2. Social distancing is being practiced and adviced in all cities. A few major corporations have taken a significant cut in their profits and are helping fight this pandemic.
-3. We have come to realize that the most essential thing is having good health, some food on the plate, and a roof on our heads. Even the sales of iPhones and other electronic goods are stopped due to pandemic. Amazon, and other online e-commerce stores are only supplying essential items to our doorstep.
+2. Social distancing is being practiced and advised in all cities. A few major corporations have taken a significant cut in their profits and are helping fight this pandemic.
+3. We have come to realize that the most essential thing is having good health, some food on the plate, and a roof on our heads. Even the sales of iPhones and other electronic goods are stopped due to pandemic. Amazon and other online e-commerce stores are only supplying essential items to our doorstep.
 
 ![nature](/images/coronavirus-pandemic/nature.png)
 [source](https://pixabay.com/photos/person-mountain-top-achieve-1245959/)
 
-I conclude this article with the hopes that humanity doesn't forget the lessons learned due to the COVID-19 crisis. Giving the whole world, and ourselves a break doesn't seem so bad. We have witnessed first-hand improvements in our nature because of social distancing. With pollution levels decreased both in air and water, we can see mountains from far away, penguins and ducks are swimming freely in places where they were never known to exist before. The birds chirping has increased in the urban areas in recent days. Summer is not as hot as it was expected to be.
+I conclude this article with the hopes that humanity doesn't forget the lessons learned due to the COVID-19 crisis. Giving the whole world, and ourselves a break doesn't seem so bad. We have witnessed first-hand improvements in our nature because of social distancing. With pollution levels decreased both in air and water, we can see mountains from far away, penguins and ducks are swimming freely in places where they were never known to exist before. The birds chirping has increased in the urban areas in recent days. Also, this summer is not as hot as it was expected to be. :)
