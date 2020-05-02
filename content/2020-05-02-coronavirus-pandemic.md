@@ -14,12 +14,12 @@ tags:
 ---
 
 ## COVID-19: Facts and figures.
-Coronavirus disease 🦠is an infectious upper respiratory disease caused by [SARS-CoV-2](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2) virus. Most commonly known as Coronavirus, this disease was first identified in December 2019 in Wuhan, the capital of China's Hubei province. Within mere months of its first discovery, COVID-19 has spread all over the world, causing it to become a global pandemic, claiming 200000 lives. This article paints a brief picture of how this disease came to be, and what the current situation is.
+COVID-19 🦠is an infectious upper respiratory disease caused by [SARS-CoV-2](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2) virus. Most commonly known as Coronavirus, this disease was first identified in December 2019 in Wuhan, the capital of China's Hubei province. Within mere months of its first discovery, COVID-19 has spread all over the world, causing it to become a global pandemic, claiming 200000 lives. This article paints a brief picture of how this disease came to be, and what the current situation is.
 
 ![coronavirus](/images/coronavirus-pandemic/coronabanner.png)
 [source](https://pixabay.com/photos/covid-19-coronavirus-virus-corona-4961257/)
 ## A species barrier was crossed🚧:
-**December 2019**, For the microbes, it was the day to celebrate, as the Coronaviruses had crossed a new species barrier. They had mutated such that they could now infect the human hosts. Unlike many organisms, the main goal of the viruses is to find a host body, infect, and use their cell's structure to reproduce. The same would be the goals of this newfound COVID-19 virus. Some speculate that it mutated through bats, others say it had infected some other form of life stock in Wuhan market, however, the fact remains that these viruses had mutated, and could now infect humans.
+**December 2019**, For the microbes, it was the day to celebrate, as yet another virus from the family of "Coronaviruses" had crossed a new species barrier. Unlike many organisms, the main goal of the viruses is to find a host body, infect, and use their cell's structure to reproduce. The same would be the function of this newfound SARS-CoV-2 virus. Some speculate that it mutated through bats, others say it had infected some other form of life stock in Wuhan market, however, the fact remains that these viruses had mutated, and could now infect humans.
 
 The Coronaviruses started spreading amongst the residents of Wuhan district like a forest fire. This was when international travel was still at its peak. Before the China government could confirm its existence and declare this new disease to be an Epidemic in the Hubei province, the viruses had found its hosts from across the world. 
 
