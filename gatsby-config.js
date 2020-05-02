@@ -86,7 +86,7 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: "explained",
+        display: "aparna joshi",
         icon: config.favicon
       }
     },

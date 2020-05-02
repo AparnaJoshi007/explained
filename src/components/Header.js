@@ -7,7 +7,7 @@ const Header = ({ transparentHeader }) => (
   <header className={transparentHeader ? styles.transparentHeader : ''}>
     <h1>
       <Link to="/" activeClassName={styles.activeNav}>
-        <img src={config.siteNameLogo.replace("static", "")} alt="explained" />
+        <img src={config.homeLogo.replace("static", "")} alt="aparnajoshi" />
       </Link>
     </h1>
     <nav>

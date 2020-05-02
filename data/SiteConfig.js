@@ -1,13 +1,14 @@
 const config = {
-  siteTitle: 'Explained', // Site title.
-  siteTitleShort: 'Explained', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: 'Explained', // Alternative site title for SEO.
-  siteMotto: 'Clearer, Faster, Better', // Short site motto
+  siteTitle: 'Aparna Joshi', // Site title.
+  siteTitleShort: 'Aparna Joshi', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: 'Aparna Joshi', // Alternative site title for SEO.
+  siteMotto: 'I`m a Software Engineer working in Citrix, Bangalore. I spend my free time learning stuff that interests me. I write articles with educational content.', // Short site motto
   siteLogo: 'static/logos/logo.png', // Logo used for SEO and manifest.
   siteLogoDisplay: 'static/logos/image_white.png', // logo to be displayed
-  siteNameLogo: 'static/logos/name.png', // logo with site name
+  siteNameLogo: 'static/logos/aparna.svg', // logo with site name
+  homeLogo: 'static/logos/home.svg',
   favicon: 'static/logos/image_white.png',
-  siteUrl: 'https://explained.netlify.com', // Domain of your website without pathPrefix.
+  siteUrl: 'https://aparnajoshi.netlify.app', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription:
     'A blog to explain everyday things', // Website description used for RSS feeds/meta description tag.

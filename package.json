@@ -1,6 +1,6 @@
 {
-  "name": "explained",
-  "description": "blog that explains everyday things",
+  "name": "aparnajoshi-blog",
+  "description": "Personal blog to explains everyday things",
   "version": "1.1.0",
   "author": "Aparna Joshi <aparnajoshi.88@gmail.com>",
   "dependencies": {

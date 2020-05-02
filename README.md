@@ -3,9 +3,9 @@
     <img src="static/logos/logo.png" alt="Logo" width='200px' height='200px'/>
 </div>
 
-# Explained
+# My Blog
 
-Built with Gatsby starter, explained is a personal/hobby blog I have created to talk and write about my interests.
+Built with Gatsby starter, this is a personal/hobby blog I have created to talk and write about my interests.
 
 ## How can I use Gatsby to create my own blog?
 
@@ -13,7 +13,7 @@ If you are a newcomer to Gatsby who's interested in the implementations of most 
 
 If you are interested in a foundation for building ultra-fast websites, you can use this project as a "minimal" starter.
 
-[My website.](https://explained.netlify.com/)
+[My website.](https://aparnajoshi.netlify.app/)
 
 ## Features
 

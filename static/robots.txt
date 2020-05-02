@@ -2,4 +2,4 @@ User-agent: *
 Disallow: */tags/
 Disallow: */categories/
 
-sitemap: https://explained.netlify.com/sitemap.xml
+sitemap: https://aparnajoshi.netlify.app/sitemap.xml

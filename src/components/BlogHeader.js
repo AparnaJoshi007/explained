@@ -4,7 +4,7 @@ import styles from './BlogHeader.module.scss'
 
 const BlogHeader = ({ blogCount }) => (
   <div className={styles.blogHeader}>
-    <img src={config.siteLogo.replace("static", "")} alt="explained" />
+    <img src={config.siteLogo.replace("static", "")} alt="aparnajoshi" />
     <div className={styles.headerContent}>
       <h1 className={styles.blogTitle}>{config.siteTitle}</h1>
       <h2 className={styles.blogMeta}>You can view all the posts here...</h2>

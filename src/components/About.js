@@ -16,7 +16,7 @@ const About = () => (
         <li>I enjoy working with front-end technologies. Though I am supposed to be a coding alien 👽, 
           I share an immense passion for physics 🔭 and mathematics 📈.  
         </li>
-        <li>✍️ On this website, I write articles about concepts related to science 🧬, love 💘, psychology 🧠, and anything that I find interesting 🃏.
+        <li>✍️ On this website, I write articles about concepts related to science 🧬, technology 📱, and programming 💻.
         </li>
       </ol>
     </div>
