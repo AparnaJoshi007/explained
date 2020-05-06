@@ -1,24 +1,87 @@
 ---
-date: 2019-01-22
+date: 2020-05-06
 featured: false
-title: "Birch in the Rosesss"
-cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
+title: "Javascript scope and hoisting: Understanding block scope"
+cover: "/images/js-scope-hoisting/scope-hoisting.jpg"
 categories: 
-    - Gatsby
-    - Nodejs
+    - Programming
 tags:
-    - tag one
+    - Javascript
+    - Scope
+    - Hoisting
+    - var
+    - let
+    - const
 ---
 
-## Accipit alto fecerat mutato centauri haerent dominoque
+## Introduction to Scope and Hoisting
+
+Every programming language has its own rules regarding the scope of the data being stored during program execution. The term *Scope* refers to the space with in the program where the data can be accessed. Traditionally Javascript only had two types of scopes : **Global and Function scope**.
+With the introduction of **ES6**, Javascript is introduced with a thrid type of scope - **Block scope**. 
+
+**Hoisting** is a feature unique to Javascript. Hoisting in javascript refers to the variable and function declaration being moved up to the top of the scope.
 
 
-Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.
+![access](/images/js-scope-hoisting/access.png)
+[source](https://pixabay.com/illustrations/key-keyhole-lock-security-unlock-2114046/)
 
-## On deer horse aboard tritely yikes and much
+In this article we will understand the meaning scope in javascript, the implications of ES6 (block scoping), and the effects of hoisting.
+
+## Global and Function scope
+
+Javascript mainly has two types of scope : **Global and Function scope**. 
+
+**Global scope** refers to all the variables declared in a JS file that are not inside any function. These variables have access anywhere in the file. **Function scope** refers to a limited private scope that the variable gets within the function it is declared. This variable can be accessed anywhere within the function, but not outside it. Let us try to illustrate with an example. Consider the following lines of code:
+
+```javascript
+// Copy paste this block of code in your file to try it out!!!
+var globalVariable = "globalVariable is in global scope";
+
+function func1() {
+  var variable1 = "variable1 is in func1 scope";
+}
+
+function func2() {
+  var variable2 = "variable2 is in func2 scope";
+  console.log(variable1); //Uncaught ReferenceError: variable1 is not defined
+}
+console.log(variable1); //Uncaught ReferenceError: variable1 is not defined
+```
+In the above code, `globalVariable` exists throughout the JS file. Hence, it can be accessed anywhere. Since javascript code mostly executes in the browser, it is good to know what **global scope** means in the context of a browser. In any web browser, the global scope is created for us, and the `window` object lies in the global scope. Hence in the browser, the `globalVariable` can be accessed either directly or through the window object `window.globalVariable`. Since in web development we might have several javascript files, it is important to know that all the variables declared with the global scope in these files are available in the window object. This is an important point to note, if multiple files contain same variable name being declared in the global scope, unexpected code behaviours might arise because the same variable might get overriden in different files.
+
+The `variable1` exists only inside the function `func1`, and it can be accessed only inside this function. The global space and `func2` donot have access to this variable. The `console.log` statements in both places will throw an error. 
+
+If we use a venn diagram, we can depict the scope of these variables in the following manner:
+
+![Venn1](/images/js-scope-hoisting/venn1.jpg)
+
+## Scope chain and Variable look-up
+
+Consider next piece of code:
+```javascript
+var globalVariable = "globalVariable is in global scope";
+
+function outerFunc() {
+  var outerVariable = "outerVariable is in outerFunc scope";
+
+  function innerFunc() {
+    var innerVariable = "innerVariable is in innerFunc scope";
+    console.log(innerVariable); //Same scope
+    console.log(outerVariable); //Parent scope or outer scope
+    console.log(globalVariable); //Global scope
+  }
+}
+```
+
+
+
+## ES6 and Block scope
+
+## Hoisting
+
+## Let and Const
+
+// Const in case of objects and arrays
 
 The Big Oxmox advised her not to do so, because there were thousands of bad
 Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
@@ -129,4 +192,8 @@ plugins: [
     }
   }
 ]
+
+function gatsbyfunc() {
+  console.log("this is logging");
+}
 ```
