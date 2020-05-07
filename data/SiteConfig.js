@@ -2,7 +2,7 @@ const config = {
   siteTitle: 'Aparna Joshi', // Site title.
   siteTitleShort: 'Aparna Joshi', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Aparna Joshi', // Alternative site title for SEO.
-  siteMotto: 'I`m a Software Engineer working in Citrix, Bangalore. I spend my free time learning stuff that interests me. I write articles with educational content.', // Short site motto
+  siteMotto: 'I`m a Software Engineer working in Citrix, Bangalore. I spend my free time learning stuff that interests me. I write articles that educates me.', // Short site motto
   siteLogo: 'static/logos/logo.png', // Logo used for SEO and manifest.
   siteLogoDisplay: 'static/logos/image_white.png', // logo to be displayed
   siteNameLogo: 'static/logos/aparna.svg', // logo with site name

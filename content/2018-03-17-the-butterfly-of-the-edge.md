@@ -1,5 +1,5 @@
 ---
-title: "The Butterfly of the Edge"
+title: "Redis: The Database used mostly for caching"
 featured: false
 cover: "https://unsplash.it/1152/300/?random?TheButterflyoftheEdge"
 date: "17/03/2017"

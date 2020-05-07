@@ -1,7 +1,7 @@
 ---
 date: 2019-10-17
 featured: false
-title: 'Developing a Gatsby Theme'
+title: 'Top NoSQL DataBases: MongoDB vs Cassandra vs CouchDB vs DynamoDB'
 thumbnail: '../thumbnails/wp.png'
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
 slug: developing-a-gatsby-theme

@@ -1,7 +1,7 @@
 ---
 date: 2017-02-01
 featured: false
-title: "The Fallen Time"
+title: "Object oriented programming with Javascript: Inheritance, prototype and proto"
 cover: "https://unsplash.it/400/300/?random?TheFallenTime"
 categories: 
     - Tech

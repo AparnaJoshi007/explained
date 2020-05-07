@@ -98,7 +98,7 @@ variable3 = "Cannot be reassigned"; // Uncaught TypeError: Assignment to constan
 ```
 Note that, even if arrays and objects are declared with const, their inner values can be changed.
 
-## ES6 and Block scope
+## [ES6(ES2015)](https://www.w3schools.com/js/js_es6.asp) and Block scope
 
 With the advent of ES6, javascript was introduced with a new type of scope, `let` and `const` allows us to declare and use the variables with block scope. Block scope means that any variable declared within a pair of brackets `{}` can only be used within those brackets. This also means that the variables declared within `if-else` blocks, `for` loop blocks will all have block scoping when they are declared with `let` or `const`. It is important to note, however, that ES6 still doesn't give ~~block scoping~~ capabilities to ~~`var`~~. Since *let* provides block scoping which is more in line with other object-oriented programming languages, it is preferred over the usage of *var*
 Consider the following lines of code:
@@ -107,15 +107,19 @@ function func1() {
   var variable1 = "Grapes";
 
   if(true) {
+    var variable2 = "Bananas";
     let apples = "Oranges";
     console.log(apples); // Works - Block Scope
     console.log(variable1); // Works - Function Scope
+    console.log(variable2); // Works - Function Scope
   }
 console.log(apples); // Doesn't work - Out of the block
 console.log(variable1); // Works - Function Scope
+console.log(variable2); // Works - Function Scope
 }
 console.log(apples); // Doesn't work - Out of the block
 console.log(variable1); // Doesn't work - Out of the function
+console.log(variable2); // Doesn't work - Out of the function
 ```
 
 ## Hoisting and Temporal dead zone
@@ -145,9 +149,31 @@ However, there is a small catch in variable hoisting. During variable hoisting, 
 ```javascript
 console.log(variable1); // Works with value undefined
 console.log(variable2); // Uncaught ReferenceError: Cannot access 'b' before initialization
+console.log(constant1); // Uncaught ReferenceError: Cannot access 'b' before initialization
 
 var variable1 = "Hoisting Demo";
 let variable2 = "Hoisting";
+const constant1 = "Hoisting Demo";
 ```
 
-Variable scope and hoisting are the basic concepts of javascript which help us in building applications. I hope that this article helped you understand the usage of `var, let and const` at a much deeper level.
+## Final catch
+
+So far we know that `var` allows function scoping and `let` allows block scoping. However, there is another difference between the two. If a [closure](https://www.w3schools.com/js/js_function_closures.asp) is created within the loop, variables declared using `let` will be bound to the value during the current iteration of the loop, whereas the value of `var` variables will be the current value of the variable. Consider the following example:
+
+```javascript
+for(var i = 0; i < 10; i++) {
+  setTimeout(function() {
+    console.log('The number is ' + i);
+  });
+}
+
+for(let i = 0; i < 10; i++) {
+  setTimeout(function() {
+    console.log('The number is ' + i);
+  });
+}
+```
+The `for` loop created using `var` will print the number 10, ten times. This is because 10 is the final current value of `i`. However, the `for` loop containing `let` will print the numbers from 0 to 9, this is because the value of let is preserved and is bound to the current iteration value. This is an important concept which will be helpful when dealing with asynchronous functions within the loops. 
+
+Variable scope and hoisting are the basic concepts of javascript which help us in building applications. Note that with the addition of `let` and `const` we have only introduced the possibility of having block scope in javascript. The global and function scope always remains whether we use var, let, or const.
+I hope that this article helped you understand the usage of `var, let and const` at a much deeper level.
