@@ -1,7 +1,7 @@
 ---
 date: 2020-05-02
 featured: true
-title: "Coronavirus Pandemic : A war with the genomes"
+title: "Coronavirus Pandemic: A war with the genomes"
 cover: "/images/coronavirus-pandemic/corona.jpg"
 categories: 
     - Science
