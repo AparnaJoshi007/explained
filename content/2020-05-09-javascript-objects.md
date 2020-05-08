@@ -90,7 +90,7 @@ console.log(name.hasOwnProperty("fullName"));  // true - The property is its own
 console.log(name.hasOwnProperty("lastName")); // false - The property doesn't exist
 console.log(name.hasOwnProperty("toString")); // false - inherited property
 ```
-The **enumerable** properties associated with an object can be accessed through iteration. [for..in](https://www.w3schools.com/jsref/jsref_forin.asp) loop or regular [for](https://www.w3schools.com/js/js_loop_for.asp) loop can be used to access these properties(own/inherited). The ~~**non enumerable**~~ properties, such as methods inherited from Objects prototype, cannot be iterated.
+The **enumerable** properties associated with an object can be accessed through iteration. [for..in](https://www.w3schools.com/jsref/jsref_forin.asp) loop or regular [for](https://www.w3schools.com/js/js_loop_for.asp) loop can be used to access these properties(own/inherited). The ~~**non enumerable**~~ properties, such as methods inherited from Objects [prototype]((https://www.w3schools.com/js/js_object_prototypes.asp)), cannot be iterated.
 
 ## Primitive ways of creating Objects
 
@@ -113,6 +113,63 @@ movie.director = "Christopher Nolan";
 There are two more ways of creating the object, [**object.create**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create) and [**object.assign**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign). However, these methods are usually used to create an object from an existing object.
 
 ## Advanced ways of creating Objects
+
+The more programmatic way of creating objects include using either **constructor** or **prototype** pattern. Imagine a scenario when an object has certain core property that keeps changing, however, it also requires internal methods to handle and manipulate these properties. Creating a duplicate object consisting of the core properties and methods seems repetitive. Instead, we can use these advanced ways of creating objects and create new objects using a base template(constructor). This is specially used when the same object is used in multiple places. Object inheritance is implemented using these patterns. 
+
+1. **Constructor pattern**: In the constructor pattern, we can define a function that acts as a constructor, taking in certain properties. The methods common to all the objects created using this constructor can also be defined inside it.
+
+```javascript
+function Fruits (name, color, value) {
+    this.name = name;
+    this.color = color;
+    this.value = value;
+
+    this.getName = function() {
+        return this.name;
+    }
+
+    this.getValue = function() {
+        return this.value;
+    }
+
+    this.changeValue = function(newValue) {
+        this.value = newValue
+    }
+}
+```
+With the basic constructor in place, we can define/create our own `Fruit` object with the properties we require anywhere in the code without much repitition.
+
+```javascript
+var apple = new Fruits("Apple", "red", 20);
+console.log(apple.getName()); // Apple
+apple.changeValue(50);
+console.log(apple.getValue()); // 50
+```
+
+2. **Prototype pattern**: In this pattern, the initial object is created through a constructor. However, the common methods and properties can be added through the object's [prototype]((https://www.w3schools.com/js/js_object_prototypes.asp)) property.
+
+```javascript
+function Fruits (name, color, value) {
+    this.name = name;
+    this.color = color;
+    this.value = value;
+}
+
+Fruits.prototype.getName = function() {
+        return this.name;
+    }
+Fruits.prototype.getValue = function() {
+        return this.value;
+    }
+```
+
+We can call the constructor this same way as before. The functions added to the prototype acts as a common function shared between all the objects created using this constructor.
+
+```javascript
+var mango = new Fruits("Mango", "Yello", 70);
+console.log(mango.getName()); // Mango
+console.log(mango.getValue()); // 70
+```
 
 ## Accessing properties of an Object
 
@@ -141,7 +198,7 @@ console.log(fruits[1]); // fruit value
 
 ## Shallow Copying v/s Deep copying
 
-In one of the earlier examples, we saw that the objects can be copied from one variable to another. However, this copy exists only by reference. Physically there won't be two different copies in the variables. There are two more ways of copying objects in order to avoid this reference during copying.
+In one of the earlier examples, we saw that the objects can be copied from one variable to another. However, this copy exists only by reference. Physically there won't be two different copies in the variables. There are two more ways of copying objects to avoid this reference during copying.
 
 1. **Shallow Copying**: Using `Object.assign`, shallow copying can be implemented when we only want the outermost level to be copied by value. Objects can be nested, and these nested values will still be stored through the reference.
 
