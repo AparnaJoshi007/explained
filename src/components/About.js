@@ -60,7 +60,7 @@ const About = () => (
           to develop front-end, I will be more then happy to help.
         </li>
         <li>
-           If you are my friend or an formal acquaintance, please meet me in person, I wouldn`t mind having a cup of coffee with you
+           If you are my friend or a formal acquaintance, please meet me in person, I wouldn`t mind having a cup of coffee with you
            😛
         </li>
       </ol>
