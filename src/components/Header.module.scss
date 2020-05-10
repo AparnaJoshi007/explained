@@ -73,6 +73,53 @@ header {
   scrollbar-width: none;
   -ms-overflow-style: none !important;
 
+  .search {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    top: 5px;
+
+    .search-box {
+      width: 250px;
+      font-size: 16px;
+      height: 36px;
+      background: #000;
+      color: #fff;
+      border: 1px solid #ccc;
+      padding: 0 12px;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+    .clear-input {
+      position: absolute;
+      right: 12px;
+      top: 8px;
+      padding: 0;
+      z-index: 9;
+      cursor: pointer;
+      background: rgba(0,0,0,0);
+      border: none;
+      outline: none;
+      text-indent: -500em;
+      display: inline-block;
+  
+      span {
+        display: block;
+        background-image: url(/logos/ico-delete.svg);
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ccc;
+        border-radius: 100%;
+      }
+    }
+  }
+  
+
+  .search-results {
+    position: absolute;
+  }
+
   &::-webkit-scrollbar {
     width: 0 !important;
   }
@@ -92,6 +139,14 @@ header {
 
     ul {
       margin: 0;
+    }
+  }
+
+  .main-nav {
+    .search {
+      .search-box {
+        width: 160px;
+      }
     }
   }
 }

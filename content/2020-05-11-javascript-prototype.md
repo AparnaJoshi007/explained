@@ -49,8 +49,15 @@ This is how things have worked so far:
 4. The **prototype** of the `Name` constructor function can be accessed from the new object `jensen` using `__proto__` object.
 5. Since **prototype** itself is an object, it also contains a **prototype** attribute. This is how the [**prototype** chain](/javascript-prototype-inner-workings-of-objects#prototype-chain) is created.
 
-Even though browsers have added provide support to accessing the constructor function's prototype through the `__proto__` object, it is commonly not used during javascript programming. Nevertheless, it is important to know that the `__proto__` object exists, and it points to the constructor function from which the new object was created.
+Several browsers have added support to accessing the constructor function's prototype through the `__proto__` object. Even though it's not recommended in javascript programming(This feature is non-standard and might not work as expected in all the browsers), it can be used to check the workings of prototype chain quickly during development.
 
+Another alternative to `__proto__` include `Object.getPrototypeOf()` or `objectInstance.constructor.prototype`. If you consider the above example, it can be used in the following ways to access the same prototype property:
+
+```javascript
+Object.getPrototypeOf(jensen);
+jensen.constructor.prototype;
+```
+![screen3](/images/js-prototype/screen3.jpg)
 
 ## Prototype chain
 
@@ -143,7 +150,7 @@ console.log(apple1.value); // 20
 console.log(apple2.value); // 20
 apple1.value = 30;
 console.log(apple1.value); // 30
-console.log(apple2.value); // 30
+console.log(apple2.value); // 20
 ```
 
 To mitigate this issue, a combination of **Constructor - Prototype** pattern can be implemented. The data values belonging to the object can be kept private and unique using the **Constructor function**. The common methods which can be shared among all the objects to manipulate data can be added to the **Prototype object**.
