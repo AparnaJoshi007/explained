@@ -35,7 +35,7 @@ In 1929, Edwin Hubble observed that the stars and galaxies were expanding. The l
 ![stars-expanding](/images/history-universe/expansion.gif)
 [source](https://giphy.com/gifs/space-stars-9bTjZrytydVRK)
 
-A few decades later, in 1964, [**cosmic background radiation**](https://en.wikipedia.org/wiki/Cosmic_background_radiation) was discovered by accident. This is a relic of the early universe. Cosmic radiation is simply the particles that were created nearly 13.8 billion years ago, traveling through the universe. It is present everywhere in the universe like a background. The cosmic radiation is completely uniform --- talk more
+A few decades later, in 1964, [**cosmic background radiation**](https://en.wikipedia.org/wiki/Cosmic_background_radiation) was discovered by accident. This is a relic of the early universe. Cosmic radiation is simply the electromagnetic waves that were produced nearly 13.8 billion years ago, traveling through the universe. It is present everywhere in the universe like a background. The cosmic radiation is completely uniform --- talk more
 
 ![cosmic-background-radition](/images/history-universe/cosmic-radiation.png)
 [source](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/WMAP_2010.png/440px-WMAP_2010.png)
