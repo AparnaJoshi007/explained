@@ -7,13 +7,15 @@ import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 
 const Index = ({ data }) => {
-  const edges = data.allMarkdownRemark.edges.slice(0, 6);
+  const edges = data.allMarkdownRemark.edges;
   const postEdges = [];
   const featuredPostEdges = [];
   edges.forEach(edge => {
     const featured = edge.node.frontmatter.featured;
     if(featured === false) {
-      postEdges.push(edge);
+      if(postEdges.length < 5) {
+        postEdges.push(edge);
+      }
     } else {
       featuredPostEdges.push(edge);
     }

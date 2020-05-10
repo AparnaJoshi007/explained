@@ -26,6 +26,7 @@ const FeaturedPost = ({ postEdges }) => {
 }
 
   const postList = getPostList()
+
   return (
     <div className={styles.featuredArticleList}>
       {/* Your post list here. */

@@ -1,5 +1,5 @@
 ---
-title: "Redis: The Database used mostly for caching"
+title: "Redis: The Database used for caching"
 featured: false
 cover: "https://unsplash.it/1152/300/?random?TheButterflyoftheEdge"
 date: "17/03/2017"

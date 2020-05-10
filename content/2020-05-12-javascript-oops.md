@@ -1,15 +1,17 @@
 ---
-date: 2017-02-01
+date: 2020-05-12
 featured: false
-title: "Object oriented programming with Javascript: Inheritance, prototype and proto"
-cover: "https://unsplash.it/400/300/?random?TheFallenTime"
+title: "Object oriented programming with Javascript"
+cover: "/images/js-oops/oops.jpg"
 categories: 
-    - Tech
-    - React
+    - Programming
 tags:
-    - test
-    - something
-    - tagging
+    - Javascript
+    - Objects
+    - OOPS
+    - Inheritance
+    - prototype
+    - proto
 ---
 
 ## Hoc domum solitos veteremque nostrum
