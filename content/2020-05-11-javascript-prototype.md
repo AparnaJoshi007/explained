@@ -132,7 +132,6 @@ All built-in Constructors such as `Array(), Number(), String(), etc` were all cr
 
 Prototypes in javascript have a lot of uses, it is used for inheriting the methods of parent functions, it can be also used to abstract the data layer and expose only the getter and setter methods to manipulate values belonging to various Objects. However, prototypes have its drawbacks. All the properties added on the prototype object is **common** to every instance of the object that is created using its **constructor Function**. Any change in one of the properties will be reflected in all the objects.
 
-
 Consider the following example: 
 ```javascript
 function Apple(name, color) {
@@ -148,10 +147,17 @@ var apple2 = new Apple("Apple2", "Wheatish Red");
 console.log(apple1.name); // Apple
 console.log(apple1.value); // 20
 console.log(apple2.value); // 20
+
+Apple.prototype.value = 40;
+console.log(apple1.value); // 40
+console.log(apple2.value); // 40
+
 apple1.value = 30;
 console.log(apple1.value); // 30
-console.log(apple2.value); // 20
+console.log(apple2.value); // 40
 ```
+
+In the above example, changes made directly on the constructor's prototype was reflected in all its objects, however, when the property `value` inside the object `apple1` is changed, it doesn't reflect in the other objects. This is because `apple1` has now created its own property `value`, and from this instance onwards `apple1.value` will always be referenced to its own property `value` and not the inherited property.
 
 To mitigate this issue, a combination of **Constructor - Prototype** pattern can be implemented. The data values belonging to the object can be kept private and unique using the **Constructor function**. The common methods which can be shared among all the objects to manipulate data can be added to the **Prototype object**.
 
