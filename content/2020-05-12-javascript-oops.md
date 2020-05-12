@@ -39,9 +39,9 @@ In the function-based inheritance, we define a constructor function and add the 
 
 ```javascript
 function Vehicle(name, cost, engineType) {
-    this.name = name | '';
-    this.cost = cost | 0;
-    this.engineType = engineType | 'petrol';
+    this.name = name || '';
+    this.cost = cost || 0;
+    this.engineType = engineType || 'petrol';
 
 }
 
@@ -68,12 +68,12 @@ The above example demonstrates just the encapsulation part of object-oriented pr
 
 ```javascript
 function Car(model, hasFuel, color, name, cost, engineType ) {
-    this.model = model | '';
-    this.hasFuel = hasFuel | false;
-    this.color = color | '';
-    this.name = name | '';
-    this.cost = cost | 0;
-    this.engineType = engineType | 'petrol';
+    this.model = model || '';
+    this.hasFuel = hasFuel || false;
+    this.color = color || '';
+    this.name = name || '';
+    this.cost = cost || 0;
+    this.engineType = engineType || 'petrol';
 }
 
 Car.prototype = new Vehicle();
@@ -117,9 +117,9 @@ In the Class-based inheritance, we use the class keyword provided by ES6. The cl
 ```javascript
 class Vehicle {
     constructor(name, cost, engineType){
-        this.name = name | '';
-        this.cost = cost | 0;
-        this.engineType = engineType | 'petrol';
+        this.name = name || '';
+        this.cost = cost || 0;
+        this.engineType = engineType || 'petrol';
     }
 
     getEngineType()  {
@@ -138,9 +138,9 @@ class Vehicle {
 class Car extends Vehicle{
     constructor(model, hasFuel, color, name, cost, engineType) {
         super(name, cost, engineType);
-        this.model = model | '';
-        this.hasFuel = hasFuel | false;
-        this.color = color | '';
+        this.model = model || '';
+        this.hasFuel = hasFuel || false;
+        this.color = color || '';
     }
 }
 
