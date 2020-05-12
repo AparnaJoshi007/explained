@@ -10,6 +10,7 @@ tags:
     - Objects
     - prototype
     - proto
+slug: "/javascript-prototype-inner-workings-of-objects"
 ---
 
 ## Javascript Prototype: First detailed look into objects

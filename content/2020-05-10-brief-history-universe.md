@@ -13,6 +13,7 @@ tags:
     - Nuclei
     - Quarks
     - Glucons
+slug: "/history-of-universe-events-that-unfolded-in-first-few-seconds"
 ---
 
 ## A brief history of the Universe

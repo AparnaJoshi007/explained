@@ -8,10 +8,10 @@ import HomePageHero from '../components/HomePageHero'
 import FeaturedPost from '../components/FeaturedPost'
 import styles from './index.module.scss'
 
-const MainLayout = ({ postEdges, children }) => (
+const MainLayout = ({ shouldDisplaySearch, postEdges, searchIndex, children }) => (
   <>
     <div className={styles.headerWrapper}>
-      <Header transparentHeader />
+      <Header searchIndex={searchIndex} shouldDisplaySearch={shouldDisplaySearch} transparentHeader />
       <HomePageHero />
       <FeaturedPost postEdges={postEdges} />
       <ul className={styles.catNav}>

@@ -1,15 +1,10 @@
-import React, { useState }  from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
-import SearchResults from './SearchResults'
+import Search from './Search'
 import config from '../../data/SiteConfig'
 import styles from './Header.module.scss'
 
-const Header = ({ transparentHeader }) => {
-  const [searchValue, setSearchValue] = useState("");
-  const [searchResults, setSearchResults] = useState();
-  const displaySearch = (value) => {
-  }
-
+const Header = ({ searchIndex, transparentHeader, shouldDisplaySearch }) => {
   return (
     <header className={transparentHeader ? styles.transparentHeader : ''}>
       <h1>
@@ -19,24 +14,13 @@ const Header = ({ transparentHeader }) => {
       </h1>
       <nav>
         <ul className={styles.mainNav}>
-          <li>
-            <div className={styles.search}>
-              <input
-                className={styles.searchBox}
-                type="text"
-                placeholder="Search"
-                value={searchValue}
-                onChange={(e) => {
-                  setSearchValue(e.target.value);
-                  displaySearch(e.target.value);
-                }} 
-              />
-              <button type="reset" className={styles.clearInput} onClick={() => setSearchValue("")}>
-                <span>clear input</span>
-              </button>
-            </div>
-            
-          </li>
+          {shouldDisplaySearch &&
+            (
+            <li>
+              <Search searchIndex={searchIndex} />
+            </li>
+            )
+          }
           <li>
             <Link to="/blog" activeClassName={styles.activeNav}>
               Blogs

@@ -11,6 +11,7 @@ tags:
     - Dot Notation
     - Bracket Notation
     - JSON
+slug: "/basics-of-javascript-objects"
 ---
 
 ## Javascript Objects at a glance

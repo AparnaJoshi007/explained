@@ -12,6 +12,7 @@ tags:
     - var
     - let
     - const
+slug: "/javascript-scope-and-hoisting-understanding-block-scope"
 ---
 
 ## Introduction to Scope and Hoisting

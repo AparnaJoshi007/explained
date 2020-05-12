@@ -10,6 +10,7 @@ tags:
     - Closure
     - Partial Functions
     - Currying
+slug: "/javascript-closures-partial-functions-and-currying"
 ---
 
 ## Closure and Currying: An Introduction

@@ -12,6 +12,7 @@ tags:
     - Inheritance
     - prototype
     - proto
+slug: "/object-oriented-programming-with-javascript"
 ---
 
 ## OOPS in Javascript: Why it is required?

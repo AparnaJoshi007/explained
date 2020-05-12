@@ -4,9 +4,9 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import config from '../../data/SiteConfig'
 
-const BlankLayout = ({ children }) => (
+const BlankLayout = ({ shouldDisplaySearch, searchIndex, children }) => (
   <>
-    <Header />
+    <Header searchIndex={searchIndex} shouldDisplaySearch={shouldDisplaySearch} />
     <Helmet>
       <meta name="description" content={config.siteDescription} />
     </Helmet>

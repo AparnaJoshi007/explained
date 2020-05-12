@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+import { Index as ElasticIndex } from "elasticlunr"
 import Layout from '../layout'
 import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
@@ -8,6 +9,7 @@ import config from '../../data/SiteConfig'
 
 const Index = ({ data }) => {
   const edges = data.allMarkdownRemark.edges;
+  const searchIndex = data.siteSearchIndex.index;
   const postEdges = [];
   const featuredPostEdges = [];
   edges.forEach(edge => {
@@ -20,9 +22,15 @@ const Index = ({ data }) => {
       featuredPostEdges.push(edge);
     }
   });
+
+  const getOrCreateIndex = () => {
+    return ElasticIndex.load(searchIndex);
+  }
+
+  const index = getOrCreateIndex();
   
   return (
-    <Layout postEdges={featuredPostEdges}>
+    <Layout postEdges={featuredPostEdges} searchIndex={index} shouldDisplaySearch>
       <main>
         <Helmet title={config.siteTitle} />
         <SEO />
@@ -62,6 +70,9 @@ export const pageQuery = graphql`
           }
         }
       }
+    }
+    siteSearchIndex {
+      index
     }
   }
 `

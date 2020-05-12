@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { Index as ElasticIndex } from "elasticlunr"
 import { graphql } from 'gatsby'
 import BlankLayout from '../layout/layout'
 import PostListing from '../components/PostListing'
@@ -9,8 +10,14 @@ import config from '../../data/SiteConfig'
 
 const Blog = ({ data }) => {
   const blogCount = data.allMarkdownRemark.edges.length;
+  const searchIndex = data.siteSearchIndex.index;
+  const getOrCreateIndex = () => {
+    return ElasticIndex.load(searchIndex);
+  }
+  const index = getOrCreateIndex();
+
   return (
-    <BlankLayout>
+    <BlankLayout searchIndex={index} shouldDisplaySearch>
       <main>
         <Helmet title={`Blogs | ${config.siteTitle}`} />
         <SEO />
@@ -48,6 +55,9 @@ export const pageQuery = graphql`
           }
         }
       }
+    }
+    siteSearchIndex {
+      index
     }
   }
 `

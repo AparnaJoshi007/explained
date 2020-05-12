@@ -13,6 +13,7 @@ tags:
     - another one
     - stuff
     - other
+slug: "/redis-the-database-used-for-caching"
 ---
 
 ## Cognoscenti audeat ulterius sublimia terga potiorque saxo

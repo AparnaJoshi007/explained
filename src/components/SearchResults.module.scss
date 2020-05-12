@@ -4,6 +4,8 @@
     margin: 12px 0;
     background-color: #000;
     width: 250px;
+    max-height: 250px;
+    overflow-y: scroll;
 
     a {
         color: #00a4ff;
@@ -13,10 +15,4 @@
             text-decoration: underline;
         }
     }
-}
-
-@media (max-width: 520px) {
-    .result-container {
-        width: 160px;
-    }    
 }

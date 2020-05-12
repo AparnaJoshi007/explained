@@ -11,6 +11,7 @@ tags:
     - this
     - functions
     - prototype
+slug: "/javascript-understanding-this"
 ---
 
 ## Javascript's **this** and **that**, and few others:

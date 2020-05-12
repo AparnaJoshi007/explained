@@ -11,6 +11,7 @@ tags:
     - Social Distancing
     - WHO
     - HealthCare
+slug: "/coronavirus-pandemic-a-war-with-the-genomes"
 ---
 
 ## COVID-19: Facts and figures.
