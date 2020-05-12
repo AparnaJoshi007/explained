@@ -78,7 +78,7 @@ person.showFullName (); // Jensen Ackles - this refers to person object
 
 ## The context of `this` can be changed
 
-Though we said that the value of `this` usually holds the value of the object which invokes the function, it can be changed in many scenarios. The common scenarios when the value of this changes are: 
+Though we said that the value of `this` usually holds the value of the object which invokes the function, it can be changed in many scenarios. The common scenarios when the value of these changes are: 
 - Borrowing a method that uses `this`
 - Assign a method that uses `this` 
 - Callback function using `this`.
@@ -104,7 +104,7 @@ person1.showFullName (); // Jensen Ackles - this refers to person1 object
 person1.showFullName.apply(person2); // Dean Winchester - this refers to person2 object
 ```
 
-You can see how the value of this changed simply because we used apply and forced the context of this to **person2**
+You can see how the value of `this` changed simply because we used to apply and forced the context of `this` to **person2**
 
 ## `this` when borrowing methods:
 
@@ -181,7 +181,7 @@ var person = {
 setTimeout(person.fullName, 1000); // undefined undefined
 ```
 
-The above code works similar to how the context of `this` changes when it is assgined to a variable. One can assume that the setTimeOut function has a variable which takes the function as a parameter, and then it executes on the global object. Since global object doesn't contain the definition to **firstName** and **lastName**, the value is printed as `undefined`.
+The above code works similarly to how the context of `this` changes when it is assigned to a variable. One can assume that the setTimeOut function has a variable that takes the function as a parameter, and then it executes on the global object. Since the global object doesn't contain the definition to **firstName** and **lastName**, the value is printed as `undefined`.
 
 To fix this, we need to bind the value of `this` to the object on which it should be applied. This is a pattern most commonly seen when we are defining callback functions to the javascript events.
 
@@ -208,7 +208,7 @@ var person = {
 person.getDetails();
 ```
 
-The value of `this` doesn't refer to person object, rather it refers to the global window object. We have two ways of mitigating this problem:
+The value of `this` doesn't refer to the person object, rather it refers to the global window object. We have two ways of mitigating this problem:
 
 **1. Assign the value of `this` to an explicit variable, and then use that variable to access the properties.**
 
@@ -228,7 +228,7 @@ var person = {
 person.getDetails();
 ```
 
-**2. Use arrow function provided by **ES6** : Arrow function preserves the context of `this`.**
+**2. Use arrow function provided by **ES6**: Arrow function preserves the context of `this`.**
 
 ```javascript
 var person = {
@@ -245,6 +245,6 @@ var person = {
 person.getDetails();
 ```
 
-This article has aimed at providing a detailed understanding on how `this` is used in javascript, and has warned about the pitfalls which can be avoided while using `this`. Using javascripts **apply, call, bind and arrow functions**, we can control the value of `this` to meet our needs. As a final note, please remember that the value of `this` is usually the object on which the function is called.
+This article has aimed at providing a detailed understanding of how `this` is used in javascript and has warned about the pitfalls which can be avoided while using `this`. Using javascript's **apply, call, bind and arrow functions**, we can control the value of `this` to meet our needs. As a final note, please remember that the value of `this` is usually the object on which the function is called.
 
 
