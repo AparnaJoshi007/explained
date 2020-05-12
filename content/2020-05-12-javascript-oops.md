@@ -33,7 +33,7 @@ The 3 main valuable techniques object-oriented programming provides us are
 
 In javascript, **Inheritance** and **Encapsulation** are the two techniques that can be used under the hood of Object-oriented programming. This article will aim at explaining two ways in which OOP can be achieved in javascript.
 
-## Function-based inheritance and encapsulation: Using prototypes
+## Function-based inheritance and encapsulation
 
 In the function-based inheritance, we define a constructor function and add the properties(methods and objects) which can be inherited by other constructors. Each constructor function contains all the private methods and variables, along with added inheritable properties to perform a given set of operations. The following code shows how object-oriented programming can be achieved using constructor methods.
 
@@ -109,6 +109,24 @@ The inheritance is created in the following ways:
     }
     ```
     In this method `this.cost` is now equal to `lambo.cost`. The cost is calculated and returned.
+
+One can notice that the assignment to the properties used in the `Vehicle` object is repeated in the `Car` object when we use the prototype for inheritance. There is another alternative method which works in a similar way to implement functional inheritance.
+
+```javascript
+function Car(model, hasFuel, color, name, cost, engineType ) {
+    this.model = model || '';
+    this.hasFuel = hasFuel || false;
+    this.color = color || '';
+    Vehicle.call(this, [name, cost, engineType]);
+}
+
+var lambo = new Car('gallardo', true, 'yellow', 'Lamborighini', 20000, 'petrol');
+console.log(lambo.calculateEmi()); // 2400
+```
+
+In the above example, instead of assigning the `Car.prototype` object to a new Vehicle instance, we are calling the `Vehicle` constructor inside our `Car` constructor function, passing the reference of [`this`](https://www.w3schools.com/js/js_this.asp). To understand how Function.call(this, [...args]) work, please refer to : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
+
+- When a new object `lambo` is created, both Car and Vehicle are instantiated in the context of `lambo`. Hence all the properties present on the constructor function are now accessible to the object `lambo`.
 
 ## Class-based inheritance and encapsulation: ES6
 
