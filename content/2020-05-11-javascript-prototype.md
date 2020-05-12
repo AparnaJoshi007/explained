@@ -14,7 +14,7 @@ tags:
 
 ## Javascript Prototype: First detailed look into objects
 
-**Prototype** is an attribute every object contains in javascript, however, its inner workings are known to very few. Understanding how the prototype attribute gets assigned is an important concept, using which inheritance can be applied in javascript. Before understanding the prototype, you must know some basic principles and usage of **objects**. If you aren't familiar with objects, please read my article [Basics of javascript objects](/basics-of-javascript-objects). In this article, we will deep dive into how prototypes are assigned during object creation, and why this is important. 
+**Prototype** is an attribute every object contains in javascript (unless the object is created using `Object.create(null)`), however, its inner workings are known to very few. Understanding how the prototype attribute gets assigned is an important concept, using which inheritance can be applied in javascript. Before understanding the prototype, you must know some basic principles and usage of **objects**. If you aren't familiar with objects, please read my article [Basics of javascript objects](/basics-of-javascript-objects). In this article, we will deep dive into how prototypes are assigned during object creation, and why this is important. 
 
 ![inner workings](/images/js-prototype/innerworking.png)
 [source](https://pixabay.com/photos/road-bike-gear-vintage-594164/)
