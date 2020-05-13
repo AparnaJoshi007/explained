@@ -94,6 +94,7 @@ const SEO = ({ postNode, postPath, postSEO }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta name="google-site-verification" content="h6b-3Ta1ISx9ZVUlvSOudCit6ly5PVapy2nvrFL_Nu0" />
     </Helmet>
   )
 }
