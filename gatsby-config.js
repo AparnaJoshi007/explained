@@ -18,6 +18,14 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'none',
+        head: true,
+        anonymize: true,
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",
@@ -108,12 +116,6 @@ module.exports = {
         // Optional filter to limit indexed nodes
         filter: (node) =>
           node.frontmatter.tags !== 'exempt',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'none',
       },
     },
     "gatsby-plugin-offline",
