@@ -125,7 +125,7 @@ var person2 = {
     lastName: "Winchester",
 }
 
-person2.fullName = person1.showFullName() 
+person2.fullName = person1.showFullName();
 console.log(person2.fullName); // Jensen Ackles - this refers to person1 object
 person2.fullName = person1.showFullName.apply(person2); 
 console.log(person2.fullName); // Dean Winchester - this refers to person2 object
