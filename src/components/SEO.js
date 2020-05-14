@@ -64,7 +64,7 @@ const SEO = ({ postNode, postPath, postSEO }) => {
     )
   }
   return (
-    <Helmet>
+    <Helmet> 
       {/* General tags */}
       <meta name="description" content={description} />
       <meta name="image" content={image} />

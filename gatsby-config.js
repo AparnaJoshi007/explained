@@ -26,6 +26,12 @@ module.exports = {
         anonymize: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.GOOGLE_TAGMANAGER_ID || 'none'
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",
