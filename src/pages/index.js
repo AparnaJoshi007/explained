@@ -35,7 +35,7 @@ const Index = ({ data }) => {
         <Helmet title={config.siteTitle} />
         <SEO />
         <PostListing postEdges={postEdges} />
-        <Link to="/blog">
+        <Link to="/blog-list">
           more to read →
         </Link>
       </main>

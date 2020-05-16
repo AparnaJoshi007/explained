@@ -46,6 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const postPage = path.resolve("src/templates/post.js");
   const tagPage = path.resolve("src/templates/tag.js");
   const categoryPage = path.resolve("src/templates/category.js");
+  const blogListPage = path.resolve("src/templates/blog-list.js");
 
   const markdownQueryResult = await graphql(
     `
@@ -146,4 +147,19 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     });
   });
+
+const postsPerPage = 9;
+const numPages = Math.ceil(postsEdges.length / postsPerPage);
+Array.from({ length: numPages }).forEach((x, i) => {
+  createPage({
+    path: i === 0 ? `/blog-list/` : `/blog-list/${i + 1}`,
+    component: blogListPage,
+    context: {
+      limit: postsPerPage,
+      skip: i * postsPerPage,
+      numPages,
+      currentPage: i + 1,
+    },
+  });
+});
 };

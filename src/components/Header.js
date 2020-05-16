@@ -22,7 +22,7 @@ const Header = ({ searchIndex, transparentHeader, shouldDisplaySearch }) => {
             )
           }
           <li>
-            <Link to="/blog" activeClassName={styles.activeNav}>
+            <Link to="/blog-list" activeClassName={styles.activeNav}>
               Blogs
             </Link>
           </li>

@@ -32,12 +32,6 @@ module.exports = {
         id: process.env.GOOGLE_TAGMANAGER_ID || 'none'
       },
     },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: process.env.GOOGLE_ADSENSE || 'none'
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     "gatsby-plugin-htaccess",
