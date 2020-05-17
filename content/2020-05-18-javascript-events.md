@@ -12,7 +12,7 @@ tags:
     - Event apture
     - Event target
     - Event Bubble
-
+slug: "/javascript-events-capture-target-bubble"
 ---
 
 ## Javascript events and event handling:
