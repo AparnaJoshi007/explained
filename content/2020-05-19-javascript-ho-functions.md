@@ -24,6 +24,7 @@ A higher-order function is any function which either takes an argument as a func
 We already know the definition of a higher-order function, but the most common use-case of these functions include using them as callback functions. Using the built-in methods such as [**setTimeout**](https://www.w3schools.com/jsref/met_win_settimeout.asp), [**map**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), [**filter**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [**addEventListener**](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener), etc, are some of the most common use cases of higher-order functions which are implemented as part of our everyday code.
 
 Consider the following examples: 
+
 **Example1**:
 ```javascript
 var array1 = [1, 2, 3, 3, 56, 7, 89, 4, 5];
