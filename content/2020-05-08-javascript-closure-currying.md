@@ -10,6 +10,7 @@ tags:
     - Closure
     - Partial Functions
     - Currying
+    - Higher-order
 slug: "/javascript-closures-partial-functions-and-currying"
 ---
 
