@@ -10,6 +10,7 @@ tags:
     - Function
     - Closure
     - Higher-order
+slug: "/javascript-higher-order-functions"
 ---
 
 ## Javascript Higher-order functions:
