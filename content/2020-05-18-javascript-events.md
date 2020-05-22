@@ -1,6 +1,6 @@
 ---
 date: 2020-05-18
-featured: true
+featured: false
 title: "Javascript Events: Capture, Target, Bubble"
 cover: "/images/js-events/bubble.jpg"
 categories: 
