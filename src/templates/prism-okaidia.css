@@ -48,6 +48,26 @@ pre[class*="language-"] {
     white-space: normal;
 }
 
+tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1;
+}
+
+tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
+th {
+    background-color: #f6f8fa;
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+}
+
 .token.comment,
 .token.prolog,
 .token.doctype,
