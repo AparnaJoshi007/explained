@@ -29,7 +29,7 @@ const config = {
   copyright: 'Copyright © 2020. All rights reserved.', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: 'red', // Used for setting manifest background color.
-  notFoundImg: 'static/404/4.png',
+  notFoundImg: 'static/404/404.png',
   imga: 'static/userAvatar/imga.jpg',
   imgb: 'static/userAvatar/imgb.jpg'
 }
