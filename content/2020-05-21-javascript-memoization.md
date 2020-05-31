@@ -7,7 +7,7 @@ categories:
     - Programming
 tags:
     - Javascript
-    - Function
+    - functions
     - Memoization
     - Functional programming
     - Performance

@@ -2,7 +2,7 @@ const config = {
   siteTitle: 'Aparna Joshi', // Site title.
   siteTitleShort: 'Aparna Joshi', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Aparna Joshi', // Alternative site title for SEO.
-  siteMotto: 'I`m a Software Engineer working in Citrix, Bangalore. I spend my free time learning stuff that interests me. I write articles that educates me.', // Short site motto
+  siteMotto: 'I`m a Software Engineer working in Citrix, Bangalore. I spend my free time learning stuff that interests me. I write articles about things I most love.', // Short site motto
   siteLogo: 'static/logos/logo.png', // Logo used for SEO and manifest.
   siteLogoDisplay: 'static/logos/image_white.png', // logo to be displayed
   siteNameLogo: 'static/logos/aparna.svg', // logo with site name
@@ -25,10 +25,11 @@ const config = {
   userLocation: 'Bangalore, India', // User location to display in the author segment.
   userAvatar: 'static/userAvatar/avatar_square.png', // User avatar location
   userDescription:
-    "Software developer by profession, wanderer by choice.", // User description to display in the author segment.
+    "Software developer by profession, wanderer by choice. On a path to find purpose", // User description to display in the author segment.
   copyright: 'Copyright © 2020. All rights reserved.', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: 'red', // Used for setting manifest background color.
+  notFoundImg: 'static/404/4.png',
   imga: 'static/userAvatar/imga.jpg',
   imgb: 'static/userAvatar/imgb.jpg'
 }

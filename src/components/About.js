@@ -1,12 +1,12 @@
 import React from 'react'
-import config from '../../data/SiteConfig'
 import styles from './About.module.scss'
+import Subscribe from './Subscribe'
 
 const About = () => (
   <>
     <h1>Greetings Folks!!! 👻</h1>
     <div className={styles.aboutPage}>
-      <img src={config.imgb.replace("static", "")} alt="aparna" />
+      <Subscribe />
       <ol>
         <h2>What do I generally do?</h2>
         <li>Hi there, My name is Aparna. 
@@ -16,7 +16,7 @@ const About = () => (
         <li>I enjoy working with front-end technologies. Though I am supposed to be a coding alien 👽, 
           I share an immense passion for physics 🔭 and mathematics 📈.  
         </li>
-        <li>✍️ On this website, I write articles about concepts related to science 🧬, technology 📱, and programming 💻.
+        <li>✍️ I blog about concepts related to science 🧬, technology 📱, programming 💻 and fiction 👽.
         </li>
       </ol>
     </div>

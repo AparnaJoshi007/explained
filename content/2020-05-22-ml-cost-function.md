@@ -9,8 +9,8 @@ tags:
     - ArtificialIntelligence
     - MachineLearning
     - Algorithm
-    - Functions
-    - Cost Function
+    - functions
+    - CostFunction
 slug: "/machine-learning-cost-function"
 ---
 

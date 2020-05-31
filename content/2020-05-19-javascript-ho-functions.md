@@ -7,7 +7,7 @@ categories:
     - Programming
 tags:
     - Javascript
-    - Function
+    - functions
     - Closure
     - Higher-order
 slug: "/javascript-higher-order-functions"
