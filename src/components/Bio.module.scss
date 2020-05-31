@@ -1,15 +1,19 @@
-.avatar {
-    border-radius: 50%;
-    width: 70px;
-    float: left;
-    margin: 5px 20px;
-}
-
-.user-bio {
-    padding-bottom: 12px;
-    display: inline-block;
+.bio-container {
+    display: flex;
+    .avatar {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 5px 20px;
+    }
     
-    .user-name-link {
-        color: #3eb0ef;
+    .user-bio {
+        padding-bottom: 12px;
+        display: inline-block;
+        
+        .user-name-link {
+            color: #3eb0ef;
+        }
     }
 }
+

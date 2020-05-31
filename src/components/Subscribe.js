@@ -37,7 +37,9 @@ const Subscribe = () => {
         alt={config.userName}
       />
       <div className={styles.subscribeTitle}>
-        <h4 className={styles.subscribeHead}>Newsletter</h4>
+        <h4 className={styles.subscribeHead}>        
+          <a href="https://www.getrevue.co/profile/aparnajoshi/" target="_blank" rel="noopener noreferrer"><strong>Newsletter</strong></a>
+        </h4>
         <h2 className={styles.subscribeMsg}>Subscribe to my mailing list</h2>
       </div>
       <div className={styles.subscribeForm}>

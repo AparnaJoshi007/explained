@@ -20,6 +20,9 @@
             margin: 15px 0 0;
             color: #3eb0ef;
             letter-spacing: .2px;
+            &:hover {
+                text-decoration: underline;
+            }
         }
         .subscribe-msg {
             text-transform: uppercase;

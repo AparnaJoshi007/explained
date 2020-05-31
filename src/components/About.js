@@ -9,14 +9,14 @@ const About = () => (
       <Subscribe />
       <ol>
         <h2>What do I generally do?</h2>
-        <li>Hi there, My name is Aparna. 
-          I am a software engineer 👩‍💻 based out of Bangalore. 
-          I completed my Bachelor`s 👩‍🎓 in Information Science from RVCE.
+        <li>Hi there, My name is Aparna Joshi. 
+          I am a software engineer based out of Bangalore. 
+          I completed my Bachelor`s in Information Science from RVCE.
         </li>
         <li>I enjoy working with front-end technologies. Though I am supposed to be a coding alien 👽, 
-          I share an immense passion for physics 🔭 and mathematics 📈.  
+          I share an immense passion for physics and mathematics.  
         </li>
-        <li>✍️ I blog about concepts related to science 🧬, technology 📱, programming 💻 and fiction 👽.
+        <li>✍️ I blog about concepts related to science 🧬, technology 📱, programming 💻 and psychology.
         </li>
       </ol>
     </div>
@@ -28,13 +28,13 @@ const About = () => (
           live my life in the virtual world until I finish watching it. 
         </li>
         <li>
-          Some people sing 🎤, some people dance 💃, I, on the other hand, sketch ✍🏼 like I am in France.
+          Some people sing, some people dance, I, on the other hand, sketch like I am in France.
           Follow me on <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sketch_with_katana/">Instagram 📷</a>.
           I also go by the name `Miss.Katana` online. 
         </li>
         <li>
-          I am a great advocate of sports 🏸 and fitness 🏃‍♀️. Though I try not to count every calorie I eat,
-          I try to maintain a healthy diet 😋 and regular workouts.
+          I am a great advocate of sports and fitness. Though I try not to count every calorie I eat,
+          I try to maintain a healthy diet and regular workouts.
         </li>
         <li>
           Last but not the least, I love coffee ☕. DM me with the details given below and I would love 

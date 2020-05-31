@@ -1,6 +1,6 @@
 ---
 date: 2020-05-22
-featured: true
+featured: false
 title: "Machine Learning: Cost Function"
 cover: "https://i.imgur.com/pY4ikg7.jpg"
 categories: 
