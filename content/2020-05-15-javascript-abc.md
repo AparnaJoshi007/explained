@@ -2,7 +2,7 @@
 date: 2020-05-15
 title: "Javascript's ABC: Apply, Bind and Call"
 featured: false
-cover: "/images/js-abc/abc.jpg"
+cover: "https://i.imgur.com/JObI4uy.jpg"
 categories: 
     - Programming
 tags:
@@ -20,7 +20,7 @@ slug: "/javascripts-abc-apply-bind-and-call"
 
 Functions in javascript are nothing but objects, and hence every function has `this` parameter. They also come with a set of built-in methods, including ***Apply, Call, and Bind***. Before deep-diving into the uses and application of these methods, one should understand the [concept of **this**](/javascript-understanding-this) in javascript. `this` in javascript generally holds the context in which the function is being executed, and the ***Apply, Call, and Bind*** methods helps us to modify this context. In this article, we will learn about the application of these methods and the different scenarios in which these methods would come in handy.
 
-![functions](/images/js-abc/functions.png)
+![functions](https://i.imgur.com/PJvVCJb.png)
 [source](https://pixabay.com/photos/learn-mathematics-child-girl-2405206/)
 
 ## Applications of Bind method:

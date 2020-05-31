@@ -2,7 +2,7 @@
 date: 2020-05-06
 featured: false
 title: "Javascript scope and hoisting: Understanding block scope"
-cover: "/images/js-scope-hoisting/scope-hoisting.jpg"
+cover: "https://i.imgur.com/dNfknXS.jpg"
 categories: 
     - Programming
 tags:
@@ -23,7 +23,7 @@ With the introduction of **ES6**, Javascript is introduced with the third type o
 **Hoisting** is a feature unique to Javascript. Hoisting in javascript refers to the variable and function declaration being moved up to the top of the scope.
 
 
-![access](/images/js-scope-hoisting/access.png)
+![access](https://i.imgur.com/CgMknFE.png)
 [source](https://pixabay.com/illustrations/key-keyhole-lock-security-unlock-2114046/)
 
 In this article, we will understand the meaning scope in javascript, the implications of ES6 (block scoping), and the effects of hoisting.

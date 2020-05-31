@@ -2,7 +2,7 @@
 date: 2020-05-13
 featured: false
 title: "Javascript understanding `this`"
-cover: "/images/js-this/this.jpg"
+cover: "https://i.imgur.com/F3H5N1w.jpg"
 categories: 
     - Programming
 tags:
@@ -20,7 +20,7 @@ The ***this*** keyword in javascript is perhaps the most ambiguous thing to foll
 
 ***this*** in javascript is used similarly to how pronouns are used in the English language. Usually, we write "Jensen is studying javascript because he wants to learn web development". In the given example, note the usage of pronoun `he` to refer to John. The pronoun `he` acts as a referent to the person `John`. Similarly in Javascript, the keyword `this` acts as a referent to the object which is being executed in the current context.
 
-![this object](/images/js-this/thisobj.png)
+![this object](https://i.imgur.com/kABteL3.png)
 [source](https://pixabay.com/photos/wood-phone-apple-iphone-photo-2542913/)
 
 Consider the following example: 

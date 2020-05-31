@@ -2,7 +2,7 @@
 date: 2020-05-18
 featured: false
 title: "Javascript Events: Capture, Target, Bubble"
-cover: "/images/js-events/bubble.jpg"
+cover: "https://i.imgur.com/SJIMNBw.jpg"
 categories: 
     - Programming
 tags:
@@ -26,7 +26,7 @@ The standard DOM Events has 3 phases of event propagation:
 
 Note that not every DOM event bubbles up. There are some exceptions to this. The `focus` event doesn't bubble up the DOM tree.
 
-![propagation](/images/js-events/propogation.jpg)
+![propagation](https://i.imgur.com/dCNZl01.jpg)
 [source](https://pixabay.com/photos/escalator-rise-top-climbing-aid-474197/)
 
 In this article, we will understand the life cycle of the events, the execution phase of event handlers, and how to manipulate default browser behavior when an event is fired.
@@ -60,7 +60,7 @@ In javascript, an event is also an object which is propagated through the DOM tr
 1. `event.target`: This is the target element that caused the event. Its value doesn't change no matter where in the DOM tree the event resides currently.
 2. `event.currentTarget`/ `this`: This is the element that currently contains the event. It can be either the during capture phase or bubble phase. It's value changes based on which element is currently having the event in possession. 
 
-![target](/images/js-events/target.png)
+![target](https://i.imgur.com/QUsz5ds.png)
 [source](https://pixabay.com/photos/bulls-eye-bull-darts-game-win-1044725/)
 
 ## Event Bubbling

@@ -2,7 +2,7 @@
 date: 2020-05-08
 featured: false
 title: "Javascript Closures, Partial functions and Currying"
-cover: "/images/js-closure/closure.jpg"
+cover: "https://i.imgur.com/6Sg08qf.jpg"
 categories: 
     - Programming
 tags:
@@ -77,7 +77,7 @@ secretInfo.getID(); // 5678
 
 A lot of people new to javascript get confused about **partial function application** and **currying**. In fact, the concept of partial application is used to create curry functions in javascript. Let us understand what is a partial application and see the difference between partial application and currying
 
-<img src="/images/js-closure/curry.png" alt="currying" width="600px">
+<img src="https://i.imgur.com/zVkB5iM.png" alt="currying" width="600px">
 [source](https://pixabay.com/photos/thai-curry-green-curry-curry-chili-1736806/)
 
 Partial function application is a concept in which a function takes multiple arguments, operates on a few of these arguments, and returns a function with a lesser number of input arguments for further usage.

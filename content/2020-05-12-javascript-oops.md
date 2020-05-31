@@ -2,7 +2,7 @@
 date: 2020-05-12
 featured: false
 title: "Object-Oriented programming with Javascript"
-cover: "/images/js-oops/oops.jpg"
+cover: "https://i.imgur.com/rBW3J8i.jpg"
 categories: 
     - Programming
 tags:
@@ -25,7 +25,7 @@ Prerequisites:
 
 In javascript objects are the building blocks of our application. Everything translates into an object (Functions, Arrays, Strings, Objects). Since javascript already provides the `prototype` attribute on every object, using this object-oriented programming can be achieved in javascript. On top of this, ES6 has now introduced a new way of implementing OOP in Javascript.
 
-![object](/images/js-oops/object.png)
+![object](https://i.imgur.com/IAvc9hh.png)
 
 The 3 main valuable techniques object-oriented programming provides us are 
 1. Inheritance: Objects can inherit methods and properties from other objects

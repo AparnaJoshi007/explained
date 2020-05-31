@@ -2,7 +2,7 @@
 date: 2020-05-02
 featured: false
 title: "Coronavirus Pandemic: A war with the genomes"
-cover: "/images/coronavirus-pandemic/corona.jpg"
+cover: "https://i.imgur.com/7C9wOqK.jpg"
 categories: 
     - Science
 tags:
@@ -17,7 +17,7 @@ slug: "/coronavirus-pandemic-a-war-with-the-genomes"
 ## COVID-19: Facts and figures.
 COVID-19 🦠is an infectious upper respiratory disease caused by [SARS-CoV-2](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2) virus. Most commonly known as Coronavirus, this disease was first identified in **December 2019 in Wuhan**, the capital of China's Hubei province. Within mere months of its first discovery, COVID-19 has spread all over the world, causing it to become a global pandemic, claiming more than 200000 lives. This article paints a brief picture of how this disease came to be, and what the current situation is.
 
-![coronavirus](/images/coronavirus-pandemic/coronabanner.png)
+![coronavirus](https://i.imgur.com/qSbSlAv.png)
 [source](https://pixabay.com/photos/covid-19-coronavirus-virus-corona-4961257/)
 ## A species barrier was crossed🚧:
 **December 2019**, For the genomes, it was the day to celebrate, as yet another virus from the family of "Coronaviruses" had crossed a new species barrier. Unlike many organisms, the main goal of the viruses is to find a host body, infect, and use their cell's structure to reproduce. The same would be the function of this newfound **SARS-CoV-2** virus. Some speculate that it mutated through bats, others say it had infected some other form of life stock in Wuhan market, however, the fact remains that these viruses had mutated, and could now infect humans.
@@ -39,7 +39,7 @@ In some cases, the people with lower immunity levels might develop a more **seve
 
 The Coronaviruses are extremely contagious. The viruses spread not only through direct contact with the infected person, but also by respiratory droplets left behind in the air, and through surface contamination. At the beginning of 2020, China's Hubei province had 1000s of infected cases and was under complete lockdown, rest of the world, however, had very few cases of Coronavirus and let the international travel continue. Airports and other public areas had fewer restrictions for people traveling to/from other areas, little did we know that this would be the main cause of the rapid spread of the Virus.
 
-![Statictics](/images/coronavirus-pandemic/statistics.png)
+![Statictics](https://i.imgur.com/V2qiyvp.png)
 
 After a couple of months, the stages of COVID-19 spread was narrowed down to 4 stages:
 
@@ -53,7 +53,7 @@ After a couple of months, the stages of COVID-19 spread was narrowed down to 4 s
 
 Coronavirus is not the first-ever pandemic the world had faced. We have the ancient and vicious [Black Death](https://en.wikipedia.org/wiki/Black_Death) pandemic, [Small Pox](https://en.wikipedia.org/wiki/Smallpox) widespread which was finally eradicated in the 1900s. [Spanish flu](https://en.wikipedia.org/wiki/Spanish_flu) which claimed the lives of near 50million people. The most recent outbreaks include [Ebola](https://en.wikipedia.org/wiki/Ebola_virus_disease), [SARS](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome) and [MERS](https://en.wikipedia.org/wiki/Middle_East_respiratory_syndrome). The COVID-19 is mostly being compared with SARS and MERS since these viruses come from the same family, and also display similar characteristics. 
 
-![Comparision](/images/coronavirus-pandemic/comparision.png)
+![Comparision](https://i.imgur.com/ZRh8RzN.png)
 [source](https://www.nbcnews.com/health/health-news/coronavirus-diseases-comparing-covid-19-sars-mers-numbers-n1150321)
 
 However, care should be taken to understand that COVID-19 is very different from previously seen **SARS** and **MERS**. Current studies show that the mortality rate of **COVID-19** is around 7%, compared to 9.43% of **SARS**, and a lot less than the 34.5% mortality rate of **MERS**. It is important to note that, the spread of COVID-19 is very high, due to which there would be more number of infected individuals, leading to more number of deaths across the world, even with a lesser percentage of mortality rates.
@@ -67,7 +67,7 @@ Within the first few months of its origin, CoronaVirus became a global pandemic.
 - The initial stage of panic began when the countries across the world started **banning the air travels to and from China**. This led to more air travels as people wanted to come back to their hometowns before there would be a complete lockdown, aiding to the spread of the disease internationally.
 - The next stage of panic included a high number of individuals trying to **buy surgical masks in the hopes of evading the virus**. This caused a sudden surge in the prices, also a shortage of [PPE](https://en.wikipedia.org/wiki/Personal_protective_equipment) kits in the hospitals where actual patients reside. A wrong move due to panic which did more harm than good.
 
-![panic](/images/coronavirus-pandemic/panic.jpg)
+![panic](https://i.imgur.com/SxxGU2r.jpg)
 
 [source](https://pixabay.com/photos/coronavirus-virus-mask-corona-4914028/)
 
@@ -88,7 +88,7 @@ With the awareness and research, hope to fight COVID-19 is increasing day by day
 2. Social distancing is being practiced and advised in all cities. A few major corporations have taken a significant cut in their profits and are helping fight this pandemic.
 3. We have come to realize that the most essential thing is having good health, some food on the plate, and a roof on our heads. Even the sales of iPhones and other electronic goods are stopped due to pandemic. Amazon and other online e-commerce stores are only supplying essential items to our doorstep.
 
-![nature](/images/coronavirus-pandemic/nature.png)
+![nature](https://i.imgur.com/FPJFNih.png)
 [source](https://pixabay.com/photos/person-mountain-top-achieve-1245959/)
 
 I conclude this article with the hopes that humanity doesn't forget the lessons learned due to the **COVID-19** crisis. Giving the whole world, and ourselves a break doesn't seem so bad. We have witnessed first-hand improvements in our nature because of social distancing. With pollution levels decreased both in air and water, we can see mountains from far away, penguins and ducks are swimming freely in places where they were never known to exist before. The birds chirping has increased in the urban areas in recent days. Also, this summer is not as hot as it was expected to be. :)

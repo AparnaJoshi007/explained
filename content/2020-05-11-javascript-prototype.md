@@ -2,7 +2,7 @@
 date: 2020-05-11
 featured: false
 title: 'Javascript Prototype: Inner workings of Objects'
-cover: "/images/js-prototype/prototype.jpg"
+cover: "https://i.imgur.com/e2BN0k8.jpg"
 categories: 
     - Programming
 tags:
@@ -17,7 +17,7 @@ slug: "/javascript-prototype-inner-workings-of-objects"
 
 **Prototype** is an attribute every object contains in javascript (unless the object is created using `Object.create(null)`), however, its inner workings are known to very few. Understanding how the prototype attribute gets assigned is an important concept, using which inheritance can be applied in javascript. Before understanding the prototype, you must know some basic principles and usage of **objects**. If you aren't familiar with objects, please read my article [Basics of javascript objects](/basics-of-javascript-objects). In this article, we will deep dive into how prototypes are assigned during object creation, and why this is important. 
 
-![inner workings](/images/js-prototype/innerworking.png)
+![inner workings](https://i.imgur.com/df4ClyB.png)
 [source](https://pixabay.com/photos/road-bike-gear-vintage-594164/)
 
 ## What is the prototype property and what does it contain?
@@ -41,7 +41,7 @@ console.log(jensen);
 
 If I try to access this `console.log`, which contains all the properties of the object `jensen`, we get the following result.
 
-![screen1](/images/js-prototype/screen1.jpg)
+![screen1](https://i.imgur.com/8Jizxwo.jpg)
 
 This is how things have worked so far: 
 1. **Name** is a constructor function. It contains the **prototype** property.
@@ -58,7 +58,7 @@ Another alternative to `__proto__` include `Object.getPrototypeOf()` or `objectI
 Object.getPrototypeOf(jensen);
 jensen.constructor.prototype;
 ```
-![screen3](/images/js-prototype/screen3.jpg)
+![screen3](https://i.imgur.com/tnPpN8c.jpg)
 
 ## Prototype chain
 
@@ -88,7 +88,7 @@ If we inspect the inner properties of the object `apple1`, we can observe the fo
 1. The object **apple1** contains two main properties - `name` and `color`. These properties have the same value which was assigned to them during its creation.
 2. The `__proto__` property of the object apple1 points to the instance of the `Fruit` object. This, in turn, contains two more properties `value` and `quantity`.
 
-![screen2](/images/js-prototype/screen2.jpg)
+![screen2](https://i.imgur.com/KRcS8Lv.jpg)
 
 3. If we inspect the `__proto__` property of the Fruit instance, we see that it ultimately points to the prototype of the **javascript's Object**.
 4. When a property is not present directly on an object, javascript moves up the **prototype chain** to find the property in its immediate prototype. Much like the javascript's [scope chain](/javascript-scope-and-hoisting-understanding-block-scope), the prototype chain also goes up the ladder until **Object.prototype** is reached.

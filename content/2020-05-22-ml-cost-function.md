@@ -2,7 +2,7 @@
 date: 2020-05-22
 featured: true
 title: "Machine Learning: Cost Function"
-cover: "/images/ml-cf/gd.jpg"
+cover: "https://i.imgur.com/pY4ikg7.jpg"
 categories: 
     - Programming
 tags:
@@ -39,7 +39,7 @@ Where, **x<sub>1</sub>**, **x<sub>2</sub>**, and **x<sub>3</sub>** represent Dim
 If we have only one independent variable(**x**), we call this as **linear regression**. For the sake of simplicity, I will be using linear regression in the rest of the article.
 
 ## Cost of the hypothesis function
-<img src="/images/ml-cf/cost.jpg" alt="cost" width="600px" />
+<img src="https://i.imgur.com/3prxpKk.jpg" alt="cost" width="600px" />
 
 [source](https://pixabay.com/illustrations/bitcoin-currency-technology-money-3089728/)
 
@@ -53,7 +53,7 @@ Let us consider two graphs. **Graph 1 contains the plot of output *y* versus the
 
 **Let us view this graph:**
 
-<img src="/images/ml-cf/graph1.png" alt="graph1" width="600px" />
+<img src="https://i.imgur.com/5XMEVIu.png" alt="graph1" width="600px" />
 
 **In the above graph:**
 1. Individual points on the graph represent each training sample **y** v/s **x**.

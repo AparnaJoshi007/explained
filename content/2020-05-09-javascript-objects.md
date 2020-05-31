@@ -2,7 +2,7 @@
 date: 2020-05-09
 featured: false
 title: "Basics of javascript objects"
-cover: "/images/js-objects/objects.jpg"
+cover: "https://i.imgur.com/0qxzKxY.jpgs"
 categories: 
     - Programming
 tags:

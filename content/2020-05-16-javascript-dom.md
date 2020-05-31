@@ -2,7 +2,7 @@
 date: 2020-05-16
 featured: false
 title: "DOM: Javascript's primary use"
-cover: "/images/js-dom/dom-bom.jpg"
+cover: "https://i.imgur.com/N9Hgybg.jpg"
 categories: 
     - Programming
 tags:
@@ -34,7 +34,7 @@ Consider the following snippet:
 
 Its corresponding document tree can be represented as:
 
-<img src="/images/js-dom/dom.png" alt="DOM" width="600px" />
+<img src="https://i.imgur.com/ETfMFOx.png" alt="DOM" width="600px" />
 
 You can see that all the elements present in the HTML code have been converted into a tree. Individual tags, attributes, and text used in HTML act as the nodes of that tree. The Document Object Model contains several types of nodes:
 

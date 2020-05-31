@@ -2,7 +2,7 @@
 date: 2020-05-21
 featured: false
 title: "Javascript Memoization: An Optimization technique"
-cover: "/images/js-memoization/memoize.jpg"
+cover: "https://i.imgur.com/bC066q9.jpg"
 categories: 
     - Programming
 tags:
@@ -19,7 +19,7 @@ slug: "/javascript-memoization-optimization-technique"
 
 Memoization is a programming technique in which expensive function calls are cached such that their repeated usage can be served from the cache instead of running the function again and again. An expensive function is considered a function that takes some significant amount of computation time. Memoization is especially useful with recursive function calls in which the same function is repeatedly called with the same arguments. The cost of the recursive function increase with the input value sometimes, and the memoization technique can save a lot of time. Since the output of the calculation is the same, it can be cached and returned directly instead of calculating. 
 
-<img src="/images/js-memoization/loop.png" alt="loop" width="600px" />
+<img src="https://i.imgur.com/TvoTP2g.png" alt="loop" width="600px" />
 
 [source](https://pixabay.com/photos/stained-glass-spiral-circle-pattern-1181864/)
 

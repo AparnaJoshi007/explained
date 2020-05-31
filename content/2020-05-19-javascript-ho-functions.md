@@ -2,7 +2,7 @@
 date: 2020-05-19
 featured: false
 title: "Javascript Functions: Higher-order Functions"
-cover: "/images/js-ho/ho.jpg"
+cover: "https://i.imgur.com/1YWGHB2.jpg"
 categories: 
     - Programming
 tags:
@@ -17,7 +17,7 @@ slug: "/javascript-higher-order-functions"
 
 A higher-order function is any function which either takes an argument as a function or returns a function. If you have been following any of the blog posts in the javascript series, you must have already encountered higher-order functions. The opposite of higher-order functions is first-order functions, which don't take any functions as arguments or return functions as output. In this post, we will look at some of the common scenarios higher-order functions are used, and how to implement them.
 
-![functions](/images/js-abc/functions.png)
+![functions](https://i.imgur.com/PJvVCJb.png)
 [source](https://pixabay.com/photos/learn-mathematics-child-girl-2405206/)
 
 ### Higher-order functions: Common examples that don't catch our eyes
