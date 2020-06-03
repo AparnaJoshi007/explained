@@ -12,6 +12,12 @@ exports.handler = async (event, context) => {
   const { email } = JSON.parse(event.body) || "";
   const { name } = JSON.parse(event.body) || "";
 
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
+  };
+
   return  fetch(`${API_ENDPOINT}/api/v2/subscribers`, {
             method: 'POST',  
             headers: {
@@ -24,5 +30,6 @@ exports.handler = async (event, context) => {
                 "double_opt_in": true
             })
         })
+        .then(res => {res.headers = headers; return res; })
         .catch(error => ({ statusCode: 422, body: String(error) }));
 };
