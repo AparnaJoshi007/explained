@@ -1,6 +1,6 @@
 ---
 date: 2020-06-01
-featured: true
+featured: false
 title: "Javascript Async Operations: Make your web dynamic"
 cover: "https://i.imgur.com/lrj2vD6.jpg"
 categories: 

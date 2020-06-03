@@ -2,7 +2,7 @@ const config = {
   siteTitle: 'Aparna Joshi', // Site title.
   siteTitleShort: 'Aparna Joshi', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Aparna Joshi', // Alternative site title for SEO.
-  siteMotto: 'I`m a Software Engineer working in Citrix, Bangalore. I spend my free time learning stuff that interests me. I write articles about things I most love.', // Short site motto
+  siteMotto: 'CODER | BLOGGER | ARTIST | GHOST👻', // Short site motto
   siteLogo: 'static/logos/logo.png', // Logo used for SEO and manifest.
   siteLogoDisplay: 'static/logos/image_white.png', // logo to be displayed
   siteNameLogo: 'static/logos/aparna.svg', // logo with site name
@@ -11,7 +11,7 @@ const config = {
   siteUrl: 'https://aparnajoshi.netlify.app', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription:
-    'A blog to explain everyday things', // Website description used for RSS feeds/meta description tag.
+    'A blog on science, technology and programming concepts', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
   siteFBAppID: '1825356251115265', // FB Application ID for using app insights
   googleAnalyticsID: 'UA-161211056-1', // GA tracking ID.

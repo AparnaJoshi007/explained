@@ -1,6 +1,6 @@
 ---
 date: 2020-05-11
-featured: false
+featured: true
 title: 'Javascript Prototype: Inner workings of Objects'
 cover: "https://i.imgur.com/e2BN0k8.jpg"
 categories: 

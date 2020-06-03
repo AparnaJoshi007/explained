@@ -9,8 +9,9 @@ const addSubscriber = (email, name) => {
         headers: {
             'Access-Control-Allow-Headers': '*',
             'Authorization': 'Token bgGedS2X6DKG26NZNXzHSZE2IciMOae2',
-            'Access-Control-Allow-Origin': 'localhost:8000',
-            'Content-Type': 'application/json'
+            'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Credentials': true
         },
         body: JSON.stringify({
             "email": "aparna.joshi@gmail.com",
@@ -43,13 +44,6 @@ const Subscribe = () => {
         <h2 className={styles.subscribeMsg}>Subscribe to my mailing list</h2>
       </div>
       <div className={styles.subscribeForm}>
-        <form
-          action="https://www.getrevue.co/profile/aparnajoshi/add_subscriber" 
-          method="post" 
-          id="revue-form" 
-          name="revue-form" 
-          target="_blank"
-        >
           <input 
             placeholder="Email" 
             type="email" 
@@ -66,8 +60,7 @@ const Subscribe = () => {
             value={nameValue}
             onChange={(e) => setName(e.target.value)}
           />
-          <input className={styles.subscribeButton} type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" />
-        </form>
+          <button onClick={() => addSubscriber(emailValue, nameValue)} className={styles.subscribeButton} type="submit" name="member[subscribe]" id="member_submit">Subscribe</button>
       </div>  
     </div>
 )
