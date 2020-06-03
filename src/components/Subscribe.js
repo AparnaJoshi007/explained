@@ -3,23 +3,19 @@ import styles from './Subscribe.module.scss'
 import config from '../../data/SiteConfig'
 
 const addSubscriber = (email, name) => {
-    fetch('https://www.getrevue.co/api/v2/subscribers', {
+    fetch('https://aparnajoshi.netlify.app/.netlify/functions/index', {
         method: 'POST',  
-        mode: 'cors', 
         headers: {
-            'Access-Control-Allow-Headers': '*',
-            'Authorization': 'Token bgGedS2X6DKG26NZNXzHSZE2IciMOae2',
-            'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Credentials': true
         },
         body: JSON.stringify({
-            "email": "aparna.joshi@gmail.com",
-            "double_opt_in": true
+            "email": email,
+            "name": name
         })
     })
     .then((res) => {
-        console.log(res)
+        setEmail("");
+        setName("");
     })
     .catch((err) => {
         console.log(err)
@@ -27,8 +23,8 @@ const addSubscriber = (email, name) => {
 }
 
 const Subscribe = () => {
- const [emailValue, setEmail] = useState("");
- const [nameValue, setName] = useState("");
+  const [emailValue, setEmail] = useState("");
+  const [nameValue, setName] = useState("");
 
   return(
     <div className={styles.subscribeContainer} id="revue-embed">
