@@ -34,7 +34,7 @@ exports.handler = async (event, context) => {
             "double_opt_in": true
         })
     })
-    .then(res => {res.headers = headers; return res; })
+    .then(() =>  ({ statusCode: 201 }))
     .catch(error => ({ statusCode: 422, body: String(error) }));
   }
 };

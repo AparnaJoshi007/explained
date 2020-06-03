@@ -4,6 +4,11 @@
     flex-direction: column;
     width: 100%;
 
+    .return{
+        color: #3eb0ef;
+        text-decoration: underline;
+    }
+
     .avatar {
         border-radius: 50%;
         width: 70px;

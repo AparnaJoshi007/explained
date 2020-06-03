@@ -5,13 +5,12 @@ import config from '../../data/SiteConfig'
 const Subscribe = () => {
   const [emailValue, setEmail] = useState("");
   const [nameValue, setName] = useState("");
-
+  const [returnMessage, setReturnMessage] = useState("");
 
   const addSubscriber = (email, name) => {
     fetch('https://aparnajoshi.netlify.app/.netlify/functions/index', {
         method: 'POST',  
         headers: {
-            'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -19,7 +18,8 @@ const Subscribe = () => {
             "name": name
         })
     })
-    .then((res) => {
+    .then(() => {
+        setReturnMessage(`The email: ${emailValue} has been added to subscribers list. Please confirm your subscription`);
         setEmail("");
         setName("");
     })
@@ -59,7 +59,8 @@ const Subscribe = () => {
             onChange={(e) => setName(e.target.value)}
           />
           <button onClick={() => addSubscriber(emailValue, nameValue)} className={styles.subscribeButton} type="submit" name="member[subscribe]" id="member_submit">Subscribe</button>
-      </div>  
+      </div>
+      <div className={styles.return}>{returnMessage}</div>  
     </div>
 )
   }
