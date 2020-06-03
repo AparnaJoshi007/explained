@@ -32,6 +32,8 @@
     "gatsby-transformer-sharp": "^2.2.12",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
+    "netlify-lambda": "^1.6.3",
+    "node-fetch": "^2.6.0",
     "node-sass": "^4.13.1",
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
@@ -78,7 +80,9 @@
     "lint:js": "eslint --ext .js",
     "lint:md": "remark content/posts/",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
-    "format:js": "prettier '**/*.{js,jsx}' --write"
+    "format:js": "prettier '**/*.{js,jsx}' --write",
+    "build:lambda": "netlify-lambda build lambda",
+    "server:lambda": "netlify-lambda serve lambda"
   },
   "remarkConfig": {
     "plugins": [
