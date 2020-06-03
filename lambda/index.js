@@ -12,30 +12,17 @@ exports.handler = async (event, context) => {
   const { email } = JSON.parse(event.body) || "";
   const { name } = JSON.parse(event.body) || "";
 
-  fetch(`${API_ENDPOINT}/api/v2/subscribers`, {
-        method: 'POST',  
-        headers: {
-            'Authorization': `Token ${REVUE_KEY}`,
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            "email": email,
-            "name": name,
-            "double_opt_in": true
+  return  fetch(`${API_ENDPOINT}/api/v2/subscribers`, {
+            method: 'POST',  
+            headers: {
+                'Authorization': `Token ${REVUE_KEY}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                "email": email,
+                "name": name,
+                "double_opt_in": true
+            })
         })
-    })
-    .catch(error => ({ statusCode: 422, body: String(error) }));
-
-    const headers = {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
-      };
-      
-      if (event.httpMethod === 'POST') {
-          return {
-            statusCode: 200,
-            headers
-          };
-       }
+        .catch(error => ({ statusCode: 422, body: String(error) }));
 };
