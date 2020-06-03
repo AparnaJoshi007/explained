@@ -2,10 +2,16 @@ import React, { useState }  from 'react'
 import styles from './Subscribe.module.scss'
 import config from '../../data/SiteConfig'
 
-const addSubscriber = (email, name) => {
+const Subscribe = () => {
+  const [emailValue, setEmail] = useState("");
+  const [nameValue, setName] = useState("");
+
+
+  const addSubscriber = (email, name) => {
     fetch('https://aparnajoshi.netlify.app/.netlify/functions/index', {
         method: 'POST',  
         headers: {
+            'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -20,11 +26,7 @@ const addSubscriber = (email, name) => {
     .catch((err) => {
         console.log(err)
     })
-}
-
-const Subscribe = () => {
-  const [emailValue, setEmail] = useState("");
-  const [nameValue, setName] = useState("");
+  }
 
   return(
     <div className={styles.subscribeContainer} id="revue-embed">
