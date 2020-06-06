@@ -7,7 +7,6 @@ import styles from './About.module.scss'
 const About = () => (
   <div className={styles.aboutWrapper}>
     <AboutHead />
-    <Subscribe />
     <div>
         <h2>What do I generally do?</h2>
         <p>
@@ -62,6 +61,17 @@ const About = () => (
         </li>
       </ol>
     </div>
+    <Subscribe />
+    <ul className={styles.footerDetails}>
+      <li className={styles.footerList}>
+        <div>WORK</div>
+        <span>Citrix R&D India Pvt Ltd.</span>
+      </li>
+      <li className={styles.footerList}>
+        <div>EDUCATION</div>
+        <span>B.E in Information Science, RVCE.</span>
+      </li>
+    </ul>
   </div>
 )
 

@@ -4,6 +4,30 @@
     border-radius: 6px;
     padding: 30px 100px;
     width: 60vw;
+
+    .footer-details {
+        display: flex;
+        list-style: none;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        .footer-list {
+            padding: 0 4px;
+            margin: 0;
+            width: 50%;
+
+            div {
+                font-size: 12px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                color: #666;
+            }
+            span {
+                color: #000;
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 @media (max-width: 800px) {
