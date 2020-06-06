@@ -1,14 +1,14 @@
-.about-page {
-    display: flex;
-
-    img {
-        width: 400px;
-    }
+.about-wrapper {
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 6px;
+    padding: 30px 100px;
+    width: 60vw;
 }
 
-
-@media (max-width: 768px) {
-    .about-page {
-        display: block;
+@media (max-width: 800px) {
+    .about-wrapper {
+        padding: 10px 20px;
+        width: auto;
     }
 }

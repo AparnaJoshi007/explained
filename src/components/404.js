@@ -6,7 +6,7 @@ const NotFound = () => (
   <div className={styles.notFound}>
     <img src={config.notFoundImg.replace("static", "")} alt="404 page" />
     <p>You just hit a route that doesn&#39;t exist....</p>
-    <a href="/">Go to Home</a>
+    <a className={styles.anchorPoint} href="/">Go to Home</a>
   </div>
 )
 

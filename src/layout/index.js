@@ -21,7 +21,9 @@ const MainLayout = ({ shouldDisplaySearch, postEdges, searchIndex, children }) =
     <Helmet>
       <meta name="description" content={config.siteDescription} />
     </Helmet>
-    {children}
+    <div className={styles.mainChildren}>
+      {children}
+    </div>
     <Footer />
   </>
 )

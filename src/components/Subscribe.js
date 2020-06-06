@@ -30,11 +30,6 @@ const Subscribe = () => {
 
   return(
     <div className={styles.subscribeContainer} id="revue-embed">
-      <img
-        className={styles.avatar}
-        src={config.userAvatar.replace("static", "")}
-        alt={config.userName}
-      />
       <div className={styles.subscribeTitle}>
         <h4 className={styles.subscribeHead}>        
           <a href="https://www.getrevue.co/profile/aparnajoshi/" target="_blank" rel="noopener noreferrer"><strong>Newsletter</strong></a>

@@ -1,46 +1,43 @@
 import React from 'react'
-import styles from './About.module.scss'
 import Subscribe from './Subscribe'
+import AboutHead from './AboutHead'
+import styles from './About.module.scss'
+
 
 const About = () => (
-  <>
-    <h1>Greetings Folks!!! 👻</h1>
-    <div className={styles.aboutPage}>
-      <Subscribe />
-      <ol>
+  <div className={styles.aboutWrapper}>
+    <AboutHead />
+    <Subscribe />
+    <div>
         <h2>What do I generally do?</h2>
-        <li>Hi there, My name is Aparna Joshi. 
-          I am a software engineer based out of Bangalore. 
-          I completed my Bachelor`s in Information Science from RVCE.
-        </li>
-        <li>I enjoy working with front-end technologies. Though I am supposed to be a coding alien 👽, 
-          I share an immense passion for physics and mathematics.  
-        </li>
-        <li>✍️ I blog about concepts related to science 🧬, technology 📱, programming 💻 and psychology.
-        </li>
-      </ol>
+        <p>
+        Hi there, My name is Aparna Joshi. 
+        I am a software engineer based out of Bangalore. 
+        I completed my Bachelor`s in Information Science from RVCE.
+        </p>
+        <p>
+        I enjoy working with front-end technologies. Though I am supposed to be a coding alien 👽, 
+        I share an immense passion for physics and mathematics.  
+        I blog about concepts related to science, technology, programming and psychology.
+        </p>
     </div>
     <div>
       <h2>Some more random stuff about me 😉</h2>
-      <ol>
-        <li>
-          I am a huge anime 📺 fan. I get mind-numbingly addicted to a new series and 
+        <p>
+          I am a huge anime fan. I get mind-numbingly addicted to a new series and 
           live my life in the virtual world until I finish watching it. 
-        </li>
-        <li>
+        </p>
+        <p>
           Some people sing, some people dance, I, on the other hand, sketch like I am in France.
-          Follow me on <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sketch_with_katana/">Instagram 📷</a>.
+          Follow me on <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sketch_with_katana/">Instagram</a>.
           I also go by the name `Miss.Katana` online. 
-        </li>
-        <li>
+        </p>
+        <p>
           I am a great advocate of sports and fitness. Though I try not to count every calorie I eat,
           I try to maintain a healthy diet and regular workouts.
-        </li>
-        <li>
-          Last but not the least, I love coffee ☕. DM me with the details given below and I would love 
+          Last but not the least, I love coffee. DM me with the details given below and I would love 
           to chat with you over a cup of coffee.
-        </li>
-      </ol>
+        </p>
     </div>
     <div>
       <h2>Get in touch with me 🙋‍♀️</h2>
@@ -65,7 +62,7 @@ const About = () => (
         </li>
       </ol>
     </div>
-  </>
+  </div>
 )
 
 export default About

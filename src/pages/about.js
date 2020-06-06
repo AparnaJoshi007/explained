@@ -5,7 +5,7 @@ import About from '../components/About'
 import config from '../../data/SiteConfig'
 
 const AboutPage = () => (
-  <BlankLayout>
+  <BlankLayout isDarkTheme>
     <main>
       <Helmet title={`About | ${config.siteTitle}`} />
       <About />

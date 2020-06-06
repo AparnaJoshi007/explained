@@ -5,7 +5,7 @@ import NotFound from '../components/404'
 import config from '../../data/SiteConfig'
 
 const NotFoundPage = () => (
-  <BlankLayout>
+  <BlankLayout isDarkTheme>
     <main>
       <Helmet title={`404: Not Found | ${config.siteTitle}`} />
       <NotFound />

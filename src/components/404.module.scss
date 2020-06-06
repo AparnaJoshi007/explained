@@ -1,9 +1,17 @@
 .not-found {
     align-items: center;
     text-align: center;
+    background-color: #fff;
+    margin: 30px auto;
+    border-radius: 6px;
 
     img {
         max-width: 600px;
         width: 100%;
+    }
+
+    .anchor-point {
+        padding-bottom: 80px;
+        display: block;
     }
 }
