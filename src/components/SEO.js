@@ -8,19 +8,24 @@ const SEO = ({ postNode, postPath, postSEO }) => {
   let description
   let image
   let postURL
+  let isCoverImage
   if (postSEO) {
     const postMeta = postNode.frontmatter
     ;({ title } = postMeta)
     description = postMeta.description ? postMeta.description : postNode.excerpt
     image = postMeta.cover
+    isCoverImage = true
     postURL = urljoin(config.siteUrl, config.pathPrefix, postPath)
   } else {
     title = config.siteTitle
     description = config.siteDescription
     image = config.siteLogo
+    isCoverImage = false
   }
 
-  image = urljoin(config.siteUrl, config.pathPrefix, image)
+  if(!isCoverImage) {
+    image =  urljoin(config.siteUrl, config.pathPrefix, image)
+  }
   const blogURL = urljoin(config.siteUrl, config.pathPrefix)
   const schemaOrgJSONLD = [
     {
