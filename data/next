@@ -1,0 +1,174 @@
+Initial project structure: Let us begin with a basic project structure which contains plain `package.json`. 
+
+**Add the following npm packages necessary for a react project and webpack config and express app.**
+
+```javascript
+yarn add react react-dom @babel/core @babel/register @babel/preset-env @babel/preset-react @babel/polyfill core-js @babel/plugin-syntax-dynamic-import @babel/plugin-transform-runtime babel-plugin-dynamic-import-node
+
+yarn add webpack webpack-manifest-plugin webpack-node-externals 
+
+yarn add express
+```
+
+**Add a `.babelrc` file and add the babel presets and plugins information.**
+
+```javascript
+{
+    "presets": [
+       [
+           "@babel/env",
+           {
+              "useBuiltIns": "usage",
+              "corejs": "3.0.0",
+              "targets": {
+                  "browsers": ">1%, not dead, not ie 11, not op_mini all",
+                  "node": 10
+              }
+           }
+        ], 
+        "@babel/react"
+    ],
+    "plugins" : [
+        "dynamic-import-node",
+        "@babel/transform-runtime",
+        "@babel/syntax-dynamic-import"
+    ]
+}
+```
+
+**Add project files for reactjs.**
+
+```javascript
+// src/App.js
+import React from 'react';
+
+const App = () => {
+  return (
+    <div>React App</div>
+  );
+};
+export default App;
+
+
+// src/index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+
+ReactDOM.hydrate(
+  <App />,
+  document.getElementById('root')
+);
+```
+
+**Add HTML template using which markup will be rendered.**
+
+```javascript
+// server/indexHtml.js
+let assetManifest;
+assetManifest = require('../build/asset-manifest.json');
+
+export const indexHtml = ({ markup }) => {
+  return `
+    <!doctype html>
+    <html lang="en" ${htmlAttrs}>
+      <body>
+        <div id="root">${markup}</div>
+        <script type="text/javascript" src="${assetManifest['main.js']}" defer></script>
+      </body>
+    </html>
+  `;
+};
+```
+
+**Add server side code for rendering the app.**
+```javascript
+// server/server.js
+import path from 'path';
+import express from 'express';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import App from '../src/components/App';
+import { indexHtml } from './indexHtml';
+
+export const app = express();
+
+// Serve generated assets
+app.use(PUBLIC_URL, express.static(path.resolve(__dirname, '../build')));
+app.use((req, res) => {
+  const markup = ReactDOMServer.renderToString(<App />);
+  const fullMarkup = indexHtml({
+    helmet: Helmet.renderStatic(),
+    markup,
+  });
+  res.status(200).send(fullMarkup);
+});
+app.listen(PORT, HOST, (err) => {
+    return console.info(
+      `Server running on port ${PORT} -- Worker pid: ${cluster.worker.process.pid}`
+    );
+  });
+```
+
+**Add webpack config**
+```javascript
+const path = require('path');
+const ManifestPlugin = require('webpack-manifest-plugin');
+const nodeExternals = require('webpack-node-externals');
+
+const config = {
+  client: {
+    mode: 'production',
+    devtool: 'source-map',
+    entry: path.resolve(__dirname, 'src/index.js'),
+    output: {
+      path: path.resolve(__dirname, 'build'),
+      filename: 'js/[name].[chunkhash:8].js',
+    },
+    module: {
+      rules: [
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader',
+        }
+      ],
+    },
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+      }
+    },
+    plugins: [
+      new ManifestPlugin({
+        fileName: 'asset-manifest.json',
+      }),
+    ]
+  },
+  server: {
+    mode: 'production',
+    target: 'node',
+    node: {
+      __dirname: true,
+    },
+    entry: path.resolve(__dirname, 'server/index.js'),
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'server.js',
+      libraryTarget: 'commonjs2',
+    },
+    module: {
+      rules: [
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader',
+        }
+      ],
+    },
+    externals: [nodeExternals()],
+  },
+};
+
+module.exports = { config };
+```

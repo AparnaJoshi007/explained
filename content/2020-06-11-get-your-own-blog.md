@@ -1,6 +1,6 @@
 ---
 date: 2020-06-11
-featured: true
+featured: false
 title: "Get your own blog: A comparison between Gatsby, NextJs, Hugo, and Jekyllrb"
 cover: "https://i.imgur.com/g0kMi1y.jpg"
 categories: 
