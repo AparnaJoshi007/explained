@@ -1,6 +1,6 @@
 ---
 date: 2020-07-02
-featured: true
+featured: false
 title: "Webpack: Server side rendering with React and NodeJs"
 cover: "https://i.imgur.com/ifwlpAU.jpg"
 categories: 
