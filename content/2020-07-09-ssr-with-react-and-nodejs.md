@@ -1,6 +1,6 @@
 ---
 date: 2020-07-09
-featured: true
+featured: false
 title: "Server side rendering with React and NodeJs"
 cover: "https://i.imgur.com/UnCFQpQ.jpg"
 categories: 
@@ -283,4 +283,4 @@ Let us now confirm that your website is server-rendered.
 
 ![js-disabled](https://i.imgur.com/EziIquu.png)
 
-If you can see the same content and experience before you disabled javascript, then congratulations. You have a fully functioning server-side rendered react application. If you had any difficulties in following this tutorial, please refer to my github repository: https://github.com/AparnaJoshi007/ssr-react-and-node
+If you can see the same content and experience before you disabled javascript, then congratulations. You have a fully functioning server-side rendered react application. If you had any difficulties in following this tutorial, please refer to my GitHub repository: https://github.com/AparnaJoshi007/ssr-react-and-node
