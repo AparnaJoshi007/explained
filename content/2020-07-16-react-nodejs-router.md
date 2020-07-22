@@ -1,6 +1,6 @@
 ---
-date: 2020-07-09
-featured: true
+date: 2020-07-17
+featured: false
 title: "Routing with React and Nodejs"
 cover: "https://i.imgur.com/ShLYJrq.png"
 categories: 
