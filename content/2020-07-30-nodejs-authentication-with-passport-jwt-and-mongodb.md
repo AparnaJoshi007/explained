@@ -1,7 +1,7 @@
 ---
 date: 2020-07-30
 featured: true
-title: "NodeJS authentication with Passport, JWT and MongoDB"
+title: "NodeJS authentication with Passport, JWT and MongoDB Part1"
 cover: "https://i.imgur.com/E1jbLnH.jpg"
 categories: 
     - Programming
@@ -50,7 +50,7 @@ You'll be prompted to provide some information regarding the project, once this 
 Let us add **express** and certain related npm packages required for setting up basic server and authentication.
 
 ```javascript
-npm install --save express body-parser mongoose passport passport-local morgan dotenv bcryptjs
+npm install --save express body-parser mongoose passport passport-local morgan dotenv bcryptjs jsonwebtoken
 ```
 
 Now that required packages are installed, add the `index.js` file where the main code for API setup will go.
@@ -222,6 +222,7 @@ export default getStrategy;
 // passport/local-login.js
 
 import { Strategy as PassportLocalStrategy } from 'passport-local';
+import { sign } from 'jsonwebtoken';
 
 const getStrategy = (User) => new PassportLocalStrategy({
   usernameField: 'email',
@@ -243,7 +244,7 @@ const getStrategy = (User) => new PassportLocalStrategy({
     }
 
     done(null, 
-      sign({ id }, process.env.ACCESS_TOKEN_SECRET));
+      sign({ id: user._id }, process.env.ACCESS_TOKEN_SECRET));
   } catch (e) {
     console.error(e);
     done('Some unknown error');
@@ -329,5 +330,13 @@ Add the following script under `package.json` file. This would be used to start 
 Now let's run `npm run start`. You should see the following screen on your terminal.
 
 ![screen-shot](https://i.imgur.com/EDFKzNb.jpg)
+
+Use postman, try to hit the `http://localhost:8001/auth/signup` endpoint with the details of your email-id and password. This request should be successful.
+
+![screen-shot](https://i.imgur.com/3uU66kf.png)
+
+Use the same email-id and password and hit the `/login` endpoint. Your response should be successful and should contain `accessToken` assigned for your `userid`.
+
+![screen-shot](https://i.imgur.com/fmpvDAv.png)
 
 Congratulation, you have successfully created a nodejs application with passport-local and JWT for authentication. If you had any difficulties in following this tutorial, please refer to my GitHub repository: https://github.com/AparnaJoshi007/nodejs-authentication-api/
