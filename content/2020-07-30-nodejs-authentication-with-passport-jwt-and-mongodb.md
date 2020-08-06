@@ -1,6 +1,6 @@
 ---
 date: 2020-07-30
-featured: true
+featured: false
 title: "NodeJS authentication with Passport, JWT and MongoDB Part1"
 cover: "https://i.imgur.com/E1jbLnH.jpg"
 categories: 
