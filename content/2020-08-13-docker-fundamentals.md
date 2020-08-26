@@ -1,6 +1,6 @@
 ---
 date: 2020-08-12
-featured: true
+featured: false
 title: "Docker fundamentals: Everything you need to know about docker"
 cover: "https://i.imgur.com/lnjhGgu.jpg"
 categories: 
