@@ -1,7 +1,7 @@
 ---
 date: 2020-09-03
 featured: true
-title: "Trustless Authentication system with NodeJS and Nu.Id"
+title: "Trustless Authentication system with NodeJS and NuID"
 cover: "https://i.imgur.com/WWlhvwS.jpg"
 categories: 
     - Technology
@@ -29,15 +29,15 @@ How does a normal authentication system work? The user chooses an `Id` and `Pass
 
 While the traditional authentication systems are simple and amazing, it puts the user accounts at jeopardy. Nearly 81% of data breaches that happened over the last few years are due to stolen and weak passwords.
 
-Now think of a system where the passwords or its hashes are not stored. A system where the user's password is used similar to a **private ssh key**. The key is never shared, nor it is stored anywhere but the user's local storage (in this case, it's the user's mind). In such a system, the user's id would be public (similar to a public ssh key), but it reveals no information about the user whatsoever. Such a system provides a truly trustless authentication and [Nu.Id](https://nuid.io/) has made it possible for us. Nu.Id leverages a zero-knowledge cryptographic algorithm and distributed ledger technology to remove the need to store passwords in your system. The following [datahseet](https://nuid.io/pdf/data-sheet.pdf) clearly describes how they are achieving a trustless authentication system with the help of a zero-knowledge proof protocol.
+Now think of a system where the passwords or its hashes are not stored. A system where the user's password is used similar to a **private ssh key**. The key is never shared, nor it is stored anywhere but the user's local storage (in this case, it's the user's mind). In such a system, the user's id would be public (similar to a public ssh key), but it reveals no information about the user whatsoever. Such a system provides a truly trustless authentication and [NuID](https://nuid.io/) has made it possible for us. NuID leverages a zero-knowledge cryptographic algorithm and distributed ledger technology to remove the need to store passwords in your system. The following [datahseet](https://nuid.io/pdf/data-sheet.pdf) clearly describes how they are achieving a trustless authentication system with the help of a zero-knowledge proof protocol.
 
 ![nu.id](https://i.imgur.com/uBgiFCM.png)
 
-## Implementing trustless authentication with NodeJS and Nu.Id
+## Implementing trustless authentication with NodeJS and NuID
 
 **Prerequisites**: You need a basic understanding of how a NodeJS application works. Please refer to this [tutorial](https://aparnajoshi.netlify.app/nodejs-authentication-with-passport-jwt-and-mongodb) to understand how to set up and work with a NodeJS application
 
-**Nu.Id**: Signup to the developer portal of Nu.Id. Once you login, you'll be provided with NuID API key. Copy the API key into your `.env` file at the root of your project.
+**NuID**: Signup to the developer portal of NuID. Once you login, you'll be provided with NuID API key. Copy the API key into your `.env` file at the root of your project.
 
 ```javascript
 NUID_API_KEY=<Your NuID API Key>
@@ -156,7 +156,7 @@ module.exports = {
 };
 ```
 
-Create a `/utils` folder where we add the methods to handle API calls to Nu.ID's servers. Create a `nuid.js` file under this folder and add the following code
+Create a `/utils` folder where we add the methods to handle API calls to NuID's servers. Create a `nuid.js` file under this folder and add the following code
 
 ```javascript
 import fetch from 'node-fetch';
@@ -192,7 +192,7 @@ module.exports = {
 }
 ```
 
-When the user signs up, the user's public credentials will be created using the cryptographic proof provided by the user. Once the credentials are created, we are only storing the `Nu.Id` of the user in the system. This `Nu.Id` is similar to a public ssh key. One cannot determine any information about the user by obtaining this id. It is also publically available. When the user profile is created, the public credentials are also added to ethereum's rinkeby network (**This is available only during preview time**).
+When the user signs up, the user's public credentials will be created using the cryptographic proof provided by the user. Once the credentials are created, we are only storing the `nu/id` of the user in the system. This `nu/id` is similar to a public ssh key. One cannot determine any information about the user by obtaining this id. It is also publically available. When the user profile is created, the public credentials are also added to ethereum's rinkeby network (**This is available only during preview time**).
 
 ![rinkeby](https://i.imgur.com/9B0SnNy.png)
 
@@ -212,7 +212,7 @@ router.post('/login', async (req, res) => {
     console.log(user.nuid)
     let nuidCredential = credentialResponse['nuid/credential'];
     
-    // Challenge the credentials obtained using id. This step is required as the /challenge endpoint works with the credentials not registered with Nu.Id
+    // Challenge the credentials obtained using id. This step is required as the /challenge endpoint works with the credentials not registered with NuID
     let credentialChallengeResponse = await challengeCredentials(nuidCredential);
     let nuidJwt = credentialChallengeResponse['nuid.credential.challenge/jwt'];
     let challenge = decodeJwtPayload(nuidJwt);
@@ -234,7 +234,7 @@ router.post('/login', async (req, res) => {
 });
 ```
 
-Also, add the corresponding methods to make API calls to the Nu.ID's servers. Add the following code in the `nuid.js` file
+Also, add the corresponding methods to make API calls to the NuID's servers. Add the following code in the `nuid.js` file
 
 ```javascript
 
@@ -286,12 +286,12 @@ const decodeJwtPayload = (jwt) => {
 
 This is how the verification stage works: 
 
-1. The user's public id (Nu.Id) will be posted to `/credential/${id}` obtain the user public credential data. This is done using `await getCredentails(user.nuid);`
+1. The user's public id (nu/id) will be posted to `/credential/${id}` obtain the user public credential data. This is done using `await getCredentails(user.nuid);`
 2. The user's credential data is then challenged by hitting the `/challenge` endpoint to obtain a **short-lived token**.
 3. This token is decoded and used to obtain proof from the user's password. 
 4. The proof and the token is finally used to verify the authenticity of the user via  `/challenge/verify` endpoint.
 
-Once you have successfully registered a user, check your database system. Note that only the `Nu.Id` is stored in them, and it doesn't contain any of the secrets from the user.
+Once you have successfully registered a user, check your database system. Note that only the `nu/id` is stored in them, and it doesn't contain any of the secrets from the user.
 
 ![database](https://i.imgur.com/lUc0ylw.png)
 
