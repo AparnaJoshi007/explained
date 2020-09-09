@@ -1,6 +1,6 @@
 ---
 date: 2020-09-03
-featured: true
+featured: false
 title: "Trustless Authentication system with NodeJS and NuID"
 cover: "https://i.imgur.com/WWlhvwS.jpg"
 categories: 
