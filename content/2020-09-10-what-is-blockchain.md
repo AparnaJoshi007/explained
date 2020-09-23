@@ -1,6 +1,6 @@
 ---
 date: 2020-09-10
-featured: true
+featured: false
 title: "What is Blockchain? Your blockchain 101"
 cover: "https://i.imgur.com/ne0xJoX.png"
 categories: 
