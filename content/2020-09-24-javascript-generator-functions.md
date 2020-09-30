@@ -1,6 +1,6 @@
 ---
 date: 2020-09-24
-featured: true
+featured: false
 title: "Javascript: Generator functions"
 cover: "https://i.imgur.com/7misYP9.jpg"
 categories: 
