@@ -1,6 +1,6 @@
 ---
 date: 2020-10-01
-featured: true
+featured: false
 title: "Javascript: How to create chainable functions"
 cover: "https://i.imgur.com/G70YPrc.jpg"
 categories: 
