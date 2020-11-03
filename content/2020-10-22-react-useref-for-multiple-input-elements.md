@@ -1,6 +1,6 @@
 ---
 date: 2020-10-08
-featured: true
+featured: false
 title: "ReactJS: Multiple refs for handling form elements using react hooks"
 cover: "https://i.imgur.com/yRe2ROc.jpg"
 categories: 
