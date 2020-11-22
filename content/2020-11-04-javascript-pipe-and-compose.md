@@ -1,6 +1,6 @@
 ---
 date: 2020-11-04
-featured: true
+featured: false
 title: "Javascript: Pipe and Compose functions"
 cover: "https://i.imgur.com/ZLkRVYL.jpg"
 categories: 
