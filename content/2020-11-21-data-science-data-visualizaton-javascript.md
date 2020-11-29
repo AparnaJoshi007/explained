@@ -1,6 +1,6 @@
 ---
 date: 2020-11-21
-featured: true
+featured: false
 title: "Data Science: Data Visualization on Javascript"
 cover: "https://i.imgur.com/mKsZGiJ.png"
 categories: 
