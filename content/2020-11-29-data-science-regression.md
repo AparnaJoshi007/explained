@@ -1,6 +1,6 @@
 ---
 date: 2020-11-29
-featured: true
+featured: false
 title: "Data Science: Regression"
 cover: "https://i.imgur.com/KI5Caks.png"
 categories: 
